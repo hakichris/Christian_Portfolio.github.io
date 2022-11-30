@@ -1,11 +1,12 @@
 body {
   border: 5px solid black;
-  background: #FFFFFF; 
+  background:#FFF; 
   position: absolute;
   width: 375px;
   height: 718px;
   left: 0px;
   top: 0px;
+  
 }
 
 .container {
@@ -14,6 +15,7 @@ body {
   align-items: flex-start;
   padding: 114px 24px;
   gap: 12px;
+
  }
 
 img { 
@@ -24,6 +26,7 @@ img {
   position: absolute;
   right: 24px;
   top: calc(20% - 40px/2);
+
 }
 
 #Logo {
@@ -41,4 +44,5 @@ img {
   flex: none;
   order: 0;
   flex-grow: 0;
+
 }
