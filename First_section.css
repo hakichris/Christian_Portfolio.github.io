@@ -48,17 +48,14 @@ img {
 }
 
 #welcome {
-  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  font-size: 40px;
   align-items: center;
 }
 
 #description {
-  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -68,7 +65,6 @@ img {
 }
 
 h2 {
-  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
