@@ -1,24 +1,33 @@
-body {
-  border: 5px solid black;
+.container {
+  /* border: 5px solid black; */
   background: #fff;
-  position: absolute;
+  position: relative;
   width: 375px;
   height: 718px;
   left: 20px;
   top: 10px;
 }
+main {
+  background-image: url("/Users/hakizimanachristian/Vscode/Portfolio/header-shapes mobile.png");
+  position:absolute;
+  bottom:20px;
+ 
 
+}
 .toolbar {
+ 
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 114px 24px;
   gap: 12px;
+  width: 76px;
+  height: 20px;
 }
 
 h1 {
-  width: 76px;
-  height: 20px;
+  position:absolute;
+  top:20px;
   color: #6070ff;
   font-style: normal;
   font-weight: 700;
@@ -26,20 +35,19 @@ h1 {
   line-height: 20px;
 }
 
-img {
+#menu {
+  position:absolute;
   display: flex;
   padding: 8px;
-  position: absolute;
   right: 24px;
-  top: calc(20% - 40px / 2);
+  top:20px; 
 }
 
-.header {
+.content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 114px 24px;
-  gap: 12px;
   position: absolute;
   left: calc(50% - 375px / 2);
   top: 92px;
@@ -59,7 +67,6 @@ img {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  gap: 12px;
 }
 
 h2 {
@@ -68,7 +75,20 @@ h2 {
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
-  flex: none;
-  order: 0;
+}
+.icons {
+  width: 170.17px;
+  height: 20px;
+  display: flex;
+  order: 5;
   flex-grow: 0;
+  justify-content: space-between;
+}
+
+.shapes {
+  position: absolute;
+  width: 462px;
+  height: 587.15px;
+  left: -34px;
+  top: 104px;
 }
