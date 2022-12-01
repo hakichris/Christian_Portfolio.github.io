@@ -6,6 +6,7 @@
   height: 718px;
   left: 30px;
   top: 10px;
+
 }
 
 .toolbar {
@@ -15,6 +16,7 @@
   display: flex;
   flex-direction: row;
   position: absolute;
+
 }
 
 #menu {
@@ -23,6 +25,7 @@
   display: flex;
   padding: 8px;
   right: 24px;
+
 }
 
 .nav {
@@ -39,6 +42,7 @@
   line-height: 20px;
   color: #6070ff;
   text-decoration: none;
+
 }
 
 .content {
@@ -51,6 +55,7 @@
   width: 375px;
   height: 604px;
   top: 120px;
+
 }
 
 #h1 {
@@ -69,6 +74,7 @@
   flex: none;
   padding-left: 20px;
   margin: 0;
+
 }
 
 #paragraph {
@@ -83,6 +89,7 @@
   text-align: left;
   padding-left: 20px;
   margin: 0;
+
 }
 
 h2 {
@@ -95,6 +102,7 @@ h2 {
   flex: none;
   padding-left: 20px;
   margin: 0;
+
 }
 
 ul {
@@ -104,6 +112,7 @@ ul {
   justify-content: space-between;
   list-style-type: none;
   margin-top: 10px;
+
 }
 
 .icons * {
@@ -113,4 +122,5 @@ ul {
 .social {
   height: 18px;
   width: 18px;
+  
 }
