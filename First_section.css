@@ -7,15 +7,14 @@
   left: 20px;
   top: 10px;
 }
+
 main {
   background-image: url("/Users/hakizimanachristian/Vscode/Portfolio/header-shapes mobile.png");
-  position:absolute;
-  bottom:20px;
- 
-
+  position: absolute;
+  bottom: 20px;
 }
+
 .toolbar {
- 
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -26,8 +25,8 @@ main {
 }
 
 h1 {
-  position:absolute;
-  top:20px;
+  position: absolute;
+  top: 20px;
   color: #6070ff;
   font-style: normal;
   font-weight: 700;
@@ -36,11 +35,11 @@ h1 {
 }
 
 #menu {
-  position:absolute;
+  position: absolute;
   display: flex;
   padding: 8px;
   right: 24px;
-  top:20px; 
+  top: 20px;
 }
 
 .content {
@@ -76,6 +75,7 @@ h2 {
   line-height: 24px;
   color: #7f8cff;
 }
+
 .icons {
   width: 170.17px;
   height: 20px;
