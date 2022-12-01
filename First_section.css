@@ -24,7 +24,7 @@ main {
   height: 20px;
 }
 
-h1 {
+#Logo {
   position: absolute;
   top: 20px;
   color: #6070ff;
@@ -36,10 +36,11 @@ h1 {
 
 #menu {
   position: absolute;
+  top: 20px;
   display: flex;
   padding: 8px;
   right: 24px;
-  top: 20px;
+  
 }
 
 .content {
