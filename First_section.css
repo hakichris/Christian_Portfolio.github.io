@@ -6,7 +6,6 @@
   height: 718px;
   left: 30px;
   top: 10px;
-
 }
 
 .toolbar {
@@ -16,7 +15,6 @@
   display: flex;
   flex-direction: row;
   position: absolute;
-
 }
 
 #menu {
@@ -25,7 +23,6 @@
   display: flex;
   padding: 8px;
   right: 24px;
-
 }
 
 .nav {
@@ -35,14 +32,13 @@
   top: 20px;
   border-radius: nullpx;
   position: absolute;
-  font-family: 'Poppins', sans-serif; 
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
   text-decoration: none;
-
 }
 
 .content {
@@ -55,7 +51,6 @@
   width: 375px;
   height: 604px;
   top: 120px;
-
 }
 
 #h1 {
@@ -63,7 +58,7 @@
   width: 327px;
   left: 24px;
   top: 114px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -74,7 +69,6 @@
   flex: none;
   padding-left: 20px;
   margin: 0;
-
 }
 
 #paragraph {
@@ -82,18 +76,17 @@
   width: 327px;
   left: 24px;
   top: 276px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
   padding-left: 20px;
   margin: 0;
-
 }
 
 h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -102,7 +95,6 @@ h2 {
   flex: none;
   padding-left: 20px;
   margin: 0;
-
 }
 
 ul {
@@ -112,7 +104,6 @@ ul {
   justify-content: space-between;
   list-style-type: none;
   margin-top: 10px;
-
 }
 
 .icons * {
@@ -122,5 +113,4 @@ ul {
 .social {
   height: 18px;
   width: 18px;
-  
 }
