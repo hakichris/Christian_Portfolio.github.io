@@ -9,7 +9,7 @@
 }
 
 main {
-  background-image: url("/Users/hakizimanachristian/Vscode/Portfolio/header-shapes mobile.png");
+  background-image: url("header-shapes mobile.png");
   position: absolute;
   bottom: 20px;
 }
