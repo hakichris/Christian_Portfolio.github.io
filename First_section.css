@@ -331,7 +331,7 @@ a {
   border-radius: 8px;
 }
 
-.check_Project {
+.check_Project:hover {
   height: fit-content;
   font-family: "Poppins", sans-serif;
   font-style: normal;
