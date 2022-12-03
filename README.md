@@ -6,7 +6,7 @@
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>README</b></h3>
 
 </div>
 
@@ -16,9 +16,7 @@
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -36,11 +34,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Portofolio <a name="about-project"></a>
+# 📖 Portfolio <a name="about-project"></a>
 
 > Describe your project in 1 or 2 sentences.
 
-**[Portofolio]** is about designing a mobile page of a personnal portofolio
+**[Portofolio]** is about designing a mobile page of a personnal portfolio. 
 .
 
 <!-- Features -->
@@ -67,9 +65,7 @@ https://github.com/hakichris/Portfolio.git
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
-👤 **Christian**
+👤 **Christian Hakizimana**
 
 - GitHub: [@githubhandle](https://github.com/hakichris)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/hakichris/)
@@ -80,21 +76,9 @@ https://github.com/hakichris/Portfolio.git
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
 - [ ] **[a page for resume]**
 - [ ] **[a page for projects built]**
 - [ ] **[a page for profile]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-
-## 🤝 Contributing <a name="contributing"></a>
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -104,7 +88,7 @@ Feel free to check the [issues page](../../issues/).
 
 > Write a message to encourage readers to support your project
 
-If you like this project kindly contact me on github. thank for your interest
+If you like this project kindly contact me on github. thank for your interest.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
