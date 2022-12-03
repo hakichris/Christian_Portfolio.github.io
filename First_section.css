@@ -122,9 +122,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16px;
   gap: 12px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #dfe1e6;
   flex: none;
   order: 0;
@@ -132,25 +131,29 @@ main {
 }
 .works0 {
   top: 830px;
+
 }
 
 .works1 {
   top: 930px;
+
 }
 
 .works2 {
   top: 1030px;
+
 }
 
 .works3 {
   top: 1130px;
+
 }
 
 .info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   gap: 12px;
   width: 295px;
   height: 288px;
@@ -258,7 +261,7 @@ h3 {
 .code_language {
   display: flex;
   flex-direction: row;
-  padding: 0px;
+  padding: 0;
   gap: 8px;
   width: 203px;
   height: 24px;
@@ -320,7 +323,7 @@ a {
   gap: 10px;
   width: 124px;
   height: 48px;
-  left: 0px;
+  left: 0;
   border: 1px solid #6070ff;
   border-radius: 8px;
 }
@@ -359,7 +362,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   gap: 12px;
   width: 327px;
   height: 310px;
@@ -404,7 +407,7 @@ a {
 .link {
   padding-left: 0;
   height: fit-content;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -427,10 +430,9 @@ a {
   padding: 12px;
   width: 138px;
   height: 48px;
-  left: 0px;
+  left: 0;
   border: 1px solid #6070ff;
   border-radius: 8px;
-  box-sizing: border-box;
   margin: 0;
 }
 
@@ -458,7 +460,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   width: 327px;
   height: 464.15px;
   flex: none;
@@ -476,7 +478,7 @@ a {
   line-height: 24px;
   display: flex;
   align-items: center;
-  color: #000000;
+  color: #000;
 }
 
 .drop {
@@ -542,7 +544,7 @@ a {
   width: 285px;
   height: 65px;
   flex: none;
-  left: 0px;
+  left: 0;
   order: 1;
 }
 
@@ -551,7 +553,7 @@ a {
   width: 285px;
   height: 65px;
   flex: none;
-  left: 0px;
+  left: 0;
   top: -95px;
   order: 1;
 }
@@ -559,14 +561,14 @@ a {
 .separator {
   position: relative;
   flex: none;
-  left: 0px;
+  left: 0;
   top: 330px;
 }
 
 .bottom_separator {
   position: relative;
   flex: none;
-  left: 0px;
+  left: 0;
   top: 396px;
 }
 
