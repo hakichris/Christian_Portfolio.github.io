@@ -114,14 +114,13 @@ main {
 }
 
 .work_container {
-  position:relative;
+  position: relative;
   top: 830px;
   display: grid;
-  grid-template-columns:327; 
+  grid-template-columns: 327;
   grid-template-rows: 490px;
   grid-gap: 100px;
-
-  }
+}
 
 .work {
   position: relative;
@@ -138,7 +137,7 @@ main {
   flex: none;
   order: 0;
   flex-grow: 0;
-  border:1px solid;
+  border: 1px solid;
 }
 
 .info {
@@ -276,18 +275,16 @@ main {
   flex: none;
   order: 0;
   flex-grow: 0;
-
 }
 
 .ht {
-font-family: "Poppins", sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 16px;
-letter-spacing: 0.03em;
-color: #6070FF;
-
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
 }
 
 .css {
@@ -474,14 +471,14 @@ a {
   flex-grow: 0;
 }
 
-.set{
+.set {
   list-style-type: none;
 }
 
 .language {
   position: relative;
   height: 24px;
-  top:10px;
+  top: 10px;
   left: 20px;
   right: 0;
   font-family: "Poppins", sans-serif;
