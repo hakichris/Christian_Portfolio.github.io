@@ -41,7 +41,6 @@
   width: 375px;
   height: 604px;
   top: 120px;
-  border: 5px solid;
 }
 
 #h1 {
@@ -137,7 +136,6 @@ main {
   flex: none;
   order: 0;
   flex-grow: 0;
-  border: 1px solid;
 }
 
 .info {
