@@ -113,6 +113,16 @@ main {
   position: relative;
 }
 
+.work_container {
+  position:relative;
+  top: 830px;
+  display: grid;
+  grid-template-columns:327; 
+  grid-template-rows: 490px;
+  grid-gap: 100px;
+
+  }
+
 .work {
   position: relative;
   height: 490px;
@@ -128,22 +138,7 @@ main {
   flex: none;
   order: 0;
   flex-grow: 0;
-}
-
-.works0 {
-  top: 830px;
-}
-
-.works1 {
-  top: 930px;
-}
-
-.works2 {
-  top: 1030px;
-}
-
-.works3 {
-  top: 1130px;
+  border:1px solid;
 }
 
 .info {
@@ -195,7 +190,7 @@ main {
   padding: 0;
 }
 
-h3 {
+#h3 {
   width: 55px;
   height: fit-content;
   font-family: "Poppins", sans-serif;
@@ -206,6 +201,7 @@ h3 {
   color: #344563;
   padding: fit;
   margin: 0;
+  list-style-type: none;
 }
 
 .langue {
@@ -272,6 +268,7 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  font-family: "Poppins", sans-serif;
   padding: 4px 12px;
   height: fit-content;
   background: #ebebff;
@@ -279,12 +276,25 @@ h3 {
   flex: none;
   order: 0;
   flex-grow: 0;
+
+}
+
+.ht {
+font-family: "Poppins", sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.03em;
+color: #6070FF;
+
 }
 
 .css {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  font-family: "Poppins", sans-serif;
   padding: 4px 12px;
   height: fit-content;
   background: #ebebff;
@@ -298,6 +308,7 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  font-family: "Poppins", sans-serif;
   padding: 4px 12px;
   height: fit-content;
   background: #ebebff;
@@ -326,7 +337,6 @@ a {
 }
 
 .check_Project {
-  width: 100px;
   height: fit-content;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -464,10 +474,15 @@ a {
   flex-grow: 0;
 }
 
+.set{
+  list-style-type: none;
+}
+
 .language {
   position: relative;
   height: 24px;
-  left: -100px;
+  top:10px;
+  left: 20px;
   right: 0;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -480,9 +495,9 @@ a {
 
 .drop {
   position: relative;
-  left: 35%;
+  left: 85%;
   right: 25%;
-  top: -6%;
+  top: -25px;
   bottom: 37.5%;
   color: #acb7c3;
 }
@@ -537,42 +552,44 @@ a {
 
 .frame1 {
   position: relative;
-  top: -60px;
+  top: -85px;
   width: 285px;
-  height: 65px;
+  height: 70px;
   flex: none;
-  left: 0;
+  left: -10px;
   order: 1;
+  list-style-type: none;
 }
 
 .frame2 {
   position: relative;
   width: 285px;
-  height: 65px;
+  height: 70px;
   flex: none;
-  left: 0;
-  top: -95px;
+  left: -10px;
+  top: -85px;
   order: 1;
+  list-style-type: none;
 }
 
 .separator {
   position: relative;
   flex: none;
   left: 0;
-  top: 330px;
+  top: 21px;
 }
 
 .bottom_separator {
   position: relative;
   flex: none;
   left: 0;
-  top: 396px;
+  top: 60px;
 }
 
 .framework {
   position: relative;
-  left: -30px;
-  top: 15px;
+  left: -85px;
+  top: -5px;
   list-style-type: none;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -583,8 +600,8 @@ a {
 
 .skills {
   position: relative;
-  left: -30px;
-  top: 20px;
+  left: -115px;
+  top: 35px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -595,7 +612,7 @@ a {
 
 .right_icon {
   position: relative;
-  left: 135px;
+  left: 140px;
   top: 5px;
 }
 
