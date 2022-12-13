@@ -7,6 +7,12 @@
   position: absolute;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 #menu {
   position: absolute;
   top: 20px;
@@ -116,8 +122,6 @@ main {
   position: relative;
   top: 830px;
   display: grid;
-  grid-template-columns: 327;
-  grid-template-rows: 490px;
   grid-gap: 100px;
 }
 
@@ -248,8 +252,12 @@ main {
   margin: 0;
 }
 
+
+
 .code_language {
-  display: flex;
+  /* display: flex;  */
+  /* float: left; */
+
   flex-direction: row;
   padding: 0;
   gap: 8px;
@@ -258,10 +266,12 @@ main {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0;
+  margin: 0; 
 }
 
 .html {
+  float: left;
+  padding:10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -276,6 +286,8 @@ main {
 }
 
 .ht {
+  float:left;
+  padding:5px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -286,6 +298,8 @@ main {
 }
 
 .css {
+  float: left;
+  padding: 5px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -300,7 +314,9 @@ main {
 }
 
 .javascript {
-  display: flex;
+  float:left;
+  padding: 5px;
+  /* display: flex; */
   flex-direction: row;
   justify-content: center;
   font-family: "Poppins", sans-serif;
@@ -616,3 +632,105 @@ a {
   left: 200px;
   top: 5px;
 }
+
+.footer {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 375px;
+  height: 779px;
+  left: 0px;
+  top: 4350px;
+  background: #6070FF;
+  border: 1px solid;
+}
+
+h4 {
+  position: relative;
+  width: 375px;
+  height: 56px;
+  left: -1px;
+  top: 100px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #FFFFFF;
+  margin:0;
+}
+
+#text {
+  position: relative;
+  width: 327px;
+  height: 102px;
+  left: 24px;
+  top: 90px;
+  font-family:  "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px; 
+  text-align: center;  
+  color: #EBEBFF;
+}
+
+.name, .mail, .message, .button {
+  display: flex;
+  justify-content: center;
+  margin-bottom:20px;
+  position: relative;
+  height: 48px;
+  width: 327px;
+  left: 24px;
+  top: 120px;
+  bottom: 0px;
+  background: #FFFFFF;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+}
+
+#mail, #msg, #name {
+  margin-top: 8px;
+  width: 300px;
+  height: 30px;
+  list-style: none;
+  border: 0px;
+
+}
+
+#msg {
+  height: 150px;
+}
+
+.message {
+height:170px;
+
+}
+
+.button {
+  margin-top:20px;
+  height: 30px;
+  width: 140px;
+  left: 24px;
+  border-radius: 8px;
+  padding: 12px 16px 12px 16px;
+}
+
+.Img {
+  border-radius: 0px;
+  position: absolute;
+  width: 220px;
+  height: 670px;
+  left: 156px;
+  top: 20px;
+}
+
+
+
+
+
