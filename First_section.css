@@ -1,3 +1,7 @@
+body {
+ margin:0;
+}
+
 .toolbar {
   height: 48px;
   width: 375px;
@@ -631,7 +635,7 @@ a {
   left: 0;
   top: 4350px;
   background: #6070ff;
-  border: 1px solid;
+  border-radius: 70px 0 0 0;
 }
 
 h4 {
@@ -654,15 +658,15 @@ h4 {
 
 #text {
   position: relative;
-  width: 327px;
+  width: 300px;
   height: 102px;
   left: 24px;
-  top: 100px;
+  top: 95px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 30px;
   text-align: center;
   color: #ebebff;
 }
@@ -673,10 +677,11 @@ h4 {
   margin-top: 20px;
   position: relative;
   height: 48px;
-  width: 327px;
+  width: 310px;
   left: 24px;
   top: 130px;
   bottom: 0;
+  padding-left: 15px;
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
@@ -717,7 +722,7 @@ h4 {
 .Img {
   border-radius: 0;
   position: absolute;
-  width: 220px;
+  width: 219px;
   height: 680px;
   left: 156px;
   top: 30px;
