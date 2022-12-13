@@ -639,7 +639,7 @@ h4 {
   width: 375px;
   height: 56px;
   left: -1px;
-  top: 100px;
+  top: 110px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -657,7 +657,7 @@ h4 {
   width: 327px;
   height: 102px;
   left: 24px;
-  top: 90px;
+  top: 100px;
   font-family:  "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -675,7 +675,7 @@ h4 {
   height: 48px;
   width: 327px;
   left: 24px;
-  top: 120px;
+  top: 140px;
   bottom: 0px;
   background: #FFFFFF;
   border: 1px solid #CFD8DC;
@@ -723,15 +723,29 @@ background-color:#ffffff;
 border:none;
 }
 
+#button:hover {
+  background-color: #3e8e41;
+  color: white;
+}
+
 .Img {
   border-radius: 0px;
   position: absolute;
   width: 220px;
-  height: 670px;
+  height: 680px;
   left: 156px;
-  top: 20px;
+  top: 30px;
 }
 
+#shape {
+position: relative;
+width: 134px;
+height: 5px;
+left: calc(50% - 134px/2 - 0.5px);
+bottom: -160px;
+background: #0D151E;
+border-radius: 10px;
+}
 
 
 
