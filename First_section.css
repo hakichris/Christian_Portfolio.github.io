@@ -671,15 +671,13 @@ h4 {
 #msg,
 #name {
   margin-top: 20px;
-  width: 300px;
-  border: none;
   position: relative;
   height: 48px;
   width: 327px;
   left: 24px;
   top: 130px;
-  bottom: 0px;
-  background: #ffffff;
+  bottom: 0;
+  background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
 }
@@ -707,7 +705,7 @@ h4 {
   text-align: center;
   letter-spacing: 0.03em;
   color: #6070ff;
-  background-color: #ffffff;
+  background-color: #fff;
   border: none;
 }
 
