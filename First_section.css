@@ -628,7 +628,7 @@ a {
   position: absolute;
   width: 375px;
   height: 779px;
-  left: 0px;
+  left: 0;
   top: 4350px;
   background: #6070ff;
   border: 1px solid;
@@ -648,7 +648,7 @@ h4 {
   display: flex;
   justify-content: center;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   margin: 0;
 }
 
@@ -672,7 +672,6 @@ h4 {
 #name {
   margin-top: 20px;
   width: 300px;
-  height: 30px;
   border: none;
   position: relative;
   height: 48px;
@@ -718,7 +717,7 @@ h4 {
 }
 
 .Img {
-  border-radius: 0px;
+  border-radius: 0;
   position: absolute;
   width: 220px;
   height: 680px;
