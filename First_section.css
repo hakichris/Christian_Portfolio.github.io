@@ -1,5 +1,9 @@
-body {
+/* body {
   margin: 0;
+} */
+
+* {
+  box-sizing: border-box;
 }
 
 .toolbar {
@@ -72,16 +76,17 @@ ul {
 }
 
 #paragraph {
+  position:relative;
   height: fit-content;
   width: 327px;
-  left: 24px;
-  top: 276px;
+  /* left: 24px; */
+  top: -10px;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
-  padding-left: 20px;
+  padding: 20px;
   margin: 0;
 }
 
@@ -97,10 +102,14 @@ h2 {
 }
 
 #connect {
+  position: relative;
+  top: -20px;
   padding-left: 20px;
 }
 
 .Image {
+  position: relative;
+  top: -20px;
   width: 170.17px;
   padding-left: 20px;
   display: flex;
@@ -131,7 +140,7 @@ main {
 
 .work {
   position: relative;
-  height: 490px;
+  height: 520px;
   width: 327px;
   border-radius: 16px;
   padding: 16px;
@@ -337,6 +346,7 @@ a {
   left: 0;
   border: 1px solid #6070ff;
   border-radius: 8px;
+  margin-top: 10px;
 }
 
 .check_Project:hover {
@@ -449,9 +459,7 @@ a {
 .resume {
   height: 24px;
   width: 138px;
-  left: 12px;
   top: 12px;
-  padding-left: 20px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -459,6 +467,7 @@ a {
   line-height: 24px;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
   color: #396df2;
   flex: none;
@@ -485,7 +494,6 @@ a {
   position: relative;
   height: 24px;
   top: 10px;
-  left: 20px;
   right: 0;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -498,7 +506,7 @@ a {
 
 .drop {
   position: relative;
-  left: 85%;
+  left: 80%;
   right: 25%;
   top: -25px;
   bottom: 37.5%;
