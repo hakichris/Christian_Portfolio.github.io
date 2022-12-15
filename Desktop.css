@@ -93,7 +93,7 @@ ul {
   gap: 50px;
   top: 100px;
   border-radius: 0 0 0 70px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 #h1 {
@@ -156,7 +156,7 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   list-style-type: none;
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 .social {
@@ -458,7 +458,7 @@ a {
   width: 1397px;
   height: 1125.15px;
   top: 3600px;
-  background: #ffffff;
+  background: #fff;
   border-radius: 0 100px;
 }
 
@@ -780,7 +780,6 @@ h5 {
   position: relative;
   height: 48px;
   width: 447px;
-  height: 48px;
   top: 130px;
   bottom: 0;
   padding-left: 15px;
