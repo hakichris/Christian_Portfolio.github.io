@@ -42,7 +42,7 @@ ul {
 }
 
 .intro {
-  background-image: url("header-shapes mobile.png");
+  background-image: url("images/header-shapes mobile.png");
   display: flex;
   flex-direction: column;
   justify-content: center;

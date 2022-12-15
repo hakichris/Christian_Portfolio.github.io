@@ -80,7 +80,7 @@ ul {
 }
 
 .intro {
-  background-image: url("Header bg.svg");
+  background-image: url("images/Header bg.svg");
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
   display: flex;
