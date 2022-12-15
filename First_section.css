@@ -1,13 +1,10 @@
-/* body {
-  margin: 0;
-} */
 
 * {
   box-sizing: border-box;
 }
 
 .toolbar {
-  height: 48px;
+  height: 90px;
   width: 375px;
   top: 44px;
   display: flex;
@@ -79,7 +76,6 @@ ul {
   position:relative;
   height: fit-content;
   width: 327px;
-  /* left: 24px; */
   top: -10px;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -107,15 +103,19 @@ h2 {
   padding-left: 20px;
 }
 
-.Image {
+.Icon_mobile {
   position: relative;
   top: -20px;
   width: 170.17px;
-  padding-left: 20px;
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.menu , .work_container_Desketop, .Link, .Img_Desktop, .Icons, .Icons_desktop, .Image_desktop, .image {
+  display: none;
 }
 
 .icons {
@@ -373,9 +373,11 @@ a {
   padding: 114px 24px;
   gap: 24px;
   position: absolute;
-  width: 327px;
+  width: 375px;
   height: 1125.15px;
   top: 3300px;
+  background: #ffffff;
+  border-radius: 0 70px 0 0;
 }
 
 .top {
@@ -434,8 +436,7 @@ a {
   line-height: 24px;
 }
 
-.image {
-  padding-left: 0;
+.icon_mobile {
   width: 170.17px;
   display: flex;
   justify-content: space-between;
@@ -476,6 +477,9 @@ a {
 }
 
 .skill_set {
+  position: relative;
+  top: 50px;
+  left: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
