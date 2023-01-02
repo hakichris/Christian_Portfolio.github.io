@@ -49,12 +49,12 @@ ul {
   background: #5565f9;
 }
 
-.cancel{
+.cancel {
   position: absolute;
   left: 320px;
-  right: 0px;
+  right: 0;
   top: 44px;
-  bottom: 0px;
+  bottom: 0;
 }
 
 .box {
@@ -68,19 +68,21 @@ ul {
   z-index: 10;
 }
 
-.cont, .Ab, .port {
+.cont,
+.Ab,
+.port {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600px;
   font-size: 32px;
-  line-height: 44px; 
-  color: #FFF;
+  line-height: 44px;
+  color: #fff;
 }
 
 #line {
-position: absolute; 
-top: 800px;
-left: 120px;
+  position: absolute;
+  top: 800px;
+  left: 120px;
 }
 
 .intro {
