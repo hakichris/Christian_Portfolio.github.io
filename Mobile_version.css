@@ -9,7 +9,6 @@
   display: flex;
   flex-direction: row;
   position: absolute;
-  filter: blur(8px);
 }
 
 ul {
@@ -47,6 +46,7 @@ ul {
   width: 375px;
   position: absolute;
   background: #5565f9;
+  display:none;
 }
 
 .cancel {
@@ -95,7 +95,7 @@ ul {
   width: 375px;
   height: 604px;
   top: 120px;
-  filter: blur(8px);
+  /* filter: blur(8px); */
 }
 
 #h1 {
