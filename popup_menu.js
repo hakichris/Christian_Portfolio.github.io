@@ -1,30 +1,20 @@
+let cancel = document.querySelector("#cancel");
+let hamburger = document.querySelector("#menu");
 
-let cancel = document.querySelector('#cancel');
-let hamburger= document.querySelector('#menu');
+function openDiv() {
+  let popup = document.querySelector("#popup");
+  popup.style.display = "block";
+}
 
-function openDiv(){
-    let popup = document.querySelector('#popup')
-    let toolbar = document.querySelector ('#toolbar')
-    let portfolio = document.querySelector('#portfolio')
-    toolbar.style.filter= blur(8);
-    portfolio.style.filter= blur(8);
-    popup.style.display = 'block'
-   }
+function closeDiv() {
+  let get = document.querySelector("#popup");
+  get.style.display = "none";
+}
 
-function closeDiv(){
-    let get = document.querySelector('#popup')
-    get.style.display = 'none'
-   }
-
-hamburger.addEventListener("click", function(){
-    openDiv(); 
+hamburger.addEventListener("click", function () {
+  openDiv();
 });
 
-cancel.addEventListener("click", function(){
-    closeDiv();
+cancel.addEventListener("click", function () {
+  closeDiv();
 });
-
-
-
-
-

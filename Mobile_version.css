@@ -41,12 +41,15 @@ ul {
   text-decoration: none;
 }
 
-.popup {
-  height: 812px;
+.Popup {
+  height: 5130px;
   width: 375px;
-  position: absolute;
-  background: #5565f9;
-  display: none;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(8px);
+  position: fixed;
+  background-color: #6070ff;
+  z-index: 1;
+  display: block;
 }
 
 .cancel {
@@ -65,7 +68,6 @@ ul {
   gap: 30px;
   height: 24px;
   position: absolute;
-  z-index: 10;
 }
 
 .cont,
