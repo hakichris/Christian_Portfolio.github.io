@@ -1,5 +1,6 @@
-let cancel =document.querySelector("#cancel");
-let hamburger= document.querySelector("#menu");
+
+let cancel = document.querySelector('#cancel');
+let hamburger= document.querySelector('#menu');
 
 hamburger.addEventListener("click", function(){
     openDiv(); 
