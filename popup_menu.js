@@ -1,20 +1,20 @@
 const cancel = document.querySelector('#cancel');
 const hamburger = document.querySelector('#hamburger');
 
-function openDiv() {
+openDiv = () => {
   const popup = document.querySelector('#popup');
   popup.style.display = 'block';
 }
 
-function closeDiv() {
+closeDiv = () => {
   const get = document.querySelector('#popup');
   get.style.display = 'none';
 }
 
-cancel.addEventListener('click', function () {
+cancel.addEventListener('click', ()=> {
   closeDiv();
 });
 
-hamburger.addEventListener('click', function () {
+hamburger.addEventListener('click', ()=> {
   openDiv();
 });
