@@ -23,13 +23,13 @@ hamburger.addEventListener('click', () => {
 });
 
 option1.addEventListener('click', () => {
-    closeDiv();
+  closeDiv();
 });
 
 option2.addEventListener('click', () => {
-    closeDiv();
+  closeDiv();
 });
 
 option3.addEventListener('click', () => {
-    closeDiv();
+  closeDiv();
 });
