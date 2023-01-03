@@ -1,5 +1,8 @@
 const cancel = document.querySelector('#cancel');
 const hamburger = document.querySelector('#hamburger');
+const option1 = document.querySelector('.port');
+const option2 = document.querySelector('.Ab');
+const option3 = document.querySelector('.cont');
 
 function openDiv() {
   const popup = document.querySelector('#popup');
@@ -17,4 +20,16 @@ cancel.addEventListener('click', () => {
 
 hamburger.addEventListener('click', () => {
   openDiv();
+});
+
+option1.addEventListener('click', () => {
+    closeDiv();
+});
+
+option2.addEventListener('click', () => {
+    closeDiv();
+});
+
+option3.addEventListener('click', () => {
+    closeDiv();
 });
