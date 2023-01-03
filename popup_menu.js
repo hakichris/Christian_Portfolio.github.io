@@ -1,12 +1,12 @@
 const cancel = document.querySelector('#cancel');
 const hamburger = document.querySelector('#hamburger');
 
-openDiv = () => {
+function openDiv () {
   const popup = document.querySelector('#popup');
   popup.style.display = 'block';
 }
 
-closeDiv = () => {
+function closeDiv() {
   const get = document.querySelector('#popup');
   get.style.display = 'none';
 }
