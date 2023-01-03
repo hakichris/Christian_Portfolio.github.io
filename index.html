@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Christian-Hakizimana Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="First_section.css" />
+    <link rel="stylesheet" type="text/css" href="Mobile_version.css" />
     <link rel="stylesheet" media='screen and (min-width: 768px)' href="Desktop.css" />
 
   </head>
 
   <body>
     <section class="head">
-      <header class="toolbar">
-        <a class="nav" href="#">My Logo</a>
-        <nav><img id="menu" src="images/Union.png" alt="navigation" />
+      <header class="toolbar" id="toolbar">
+        <a class="nav nav-logo" href="#">My Logo</a>
+        <nav>
+          <img id="hamburger" class="hamburger" src="images/Union.png" alt="navigation">
           <ul class="menu">
             <li> <a class="me" href="#portfolio">Portfolio</a></li>
             <li> <a  class="me" href="#About">About</a></li>
@@ -22,10 +23,20 @@
            </ul>
         </nav>
       </header>
+
+      <div class="Popup" id="popup">
+      <img class="cancel" id="cancel" src="images/Icon - Cancel.png" alt="...">
+        <ul class="box">
+          <li> <a class="port" href="#portfolio">Portfolio</a></li>
+          <li> <a  class="Ab" href="#About">About</a></li>
+          <li> <a  class="cont" href="#contact">Contact</a></li>
+         </ul>
+         <img id="line" src="images/Shape.png" alt="">
+      </div>
     </section>
 
     <main>
-      <section id= "portfolio" class="intro">
+      <section class="intro">
         <h1 id="h1">I am Christian Glad to see you!</h1>
         <p id="paragraph">
           I am software developer! I can help you build a product , feature or
@@ -66,7 +77,7 @@
 
       </section>
 
-      <section class="work_container">
+      <section id= "portfolio" class="work_container">
         <div class="work works0">
           <img src="images/Snapshoot Portfolio .png" alt=" Project snapshoot" />
           <div class="Project info">
@@ -334,7 +345,7 @@
 
 
 
-    <div id="#About" class="About_myself">
+    <div id="About" class="About_myself">
         <section class="top">
           <h2 id="about">About Myself</h2>
           <p class="text">
@@ -458,5 +469,7 @@
 
       </div>
     </main>
+
+<script type="text/javascript" src="popup_menu.js"></script>
   </body>
 </html>

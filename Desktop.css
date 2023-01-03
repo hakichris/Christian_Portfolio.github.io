@@ -2,10 +2,11 @@
   box-sizing: border-box;
 }
 
-#menu,
+#hamburger,
 #shape,
 .work_container,
-.Img {
+.Img,
+.popup {
   display: none;
 }
 
@@ -178,7 +179,7 @@ main {
   width: 1397px;
   height: 2600px;
   left: 0;
-  top: 1000px;
+  top: 850px;
 }
 
 .work {
