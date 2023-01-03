@@ -1,7 +1,7 @@
 const cancel = document.querySelector('#cancel');
 const hamburger = document.querySelector('#hamburger');
 
-function openDiv () {
+function openDiv() {
   const popup = document.querySelector('#popup');
   popup.style.display = 'block';
 }
@@ -11,10 +11,10 @@ function closeDiv() {
   get.style.display = 'none';
 }
 
-cancel.addEventListener('click', ()=> {
+cancel.addEventListener('click', () => {
   closeDiv();
 });
 
-hamburger.addEventListener('click', ()=> {
+hamburger.addEventListener('click', () => {
   openDiv();
 });
