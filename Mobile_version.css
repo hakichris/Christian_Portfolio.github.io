@@ -17,7 +17,7 @@ ul {
   margin: 0;
 }
 
-#menu {
+#hamburger {
   position: absolute;
   top: 20px;
   display: flex;
@@ -49,7 +49,7 @@ ul {
   position: fixed;
   background-color: #6070ff;
   z-index: 1;
-  display: block;
+  display: none;
 }
 
 .cancel {
@@ -176,10 +176,6 @@ h2 {
 .social {
   height: 18px;
   width: 18px;
-}
-
-main {
-  position: relative;
 }
 
 .work_container {
