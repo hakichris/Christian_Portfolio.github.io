@@ -15,4 +15,6 @@ cancel.addEventListener('click', function () {
   closeDiv();
 });
 
-hamburger.addEventListener('click', openDiv);
+hamburger.addEventListener('click', function () {
+    openDiv();
+  });
