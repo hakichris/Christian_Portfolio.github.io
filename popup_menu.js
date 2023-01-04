@@ -145,30 +145,24 @@ Model_show.querySelector('.html').innerHTML = arr[0].technologies[0]
 Model_show.querySelector('.css').innerHTML = arr[0].technologies[1]
 Model_show.querySelector('.javascript').innerHTML = arr[0].technologies[2]
 
-const Popup_show = document.querySelector('.link_to_project')
+const Popup_show = document.querySelectorAll('.link_to_project')
 const close_popup = document.querySelector('.close')
 
 
 function openPop() {
   const popup_open = document.querySelector('.model');
-  const head_close = document.querySelector('.head')
-  const main_close = document.querySelector('.container')
   popup_open.style.display = 'block';
-  head_close.style.display = 'none';
-  main_close.style.display = 'none';
-
 }
 
 function closePop() {
   const popup_close = document.querySelector('.model');
-  const head_close = document.querySelector('.head')
-  const main_close = document.querySelector('.container')
   popup_close.style.display = 'none';
-  head_close.style.display = 'block';
-  main_close.style.display = 'block';
+
 }
 
+
 Popup_show.addEventListener('click', () => {
+  console.log('i am here')
   openPop();
 });
 

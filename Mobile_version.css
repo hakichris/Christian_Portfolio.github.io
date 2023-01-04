@@ -382,7 +382,7 @@ a {
   color: #6070ff;
 }
 
-.link_to_project {
+#link_to_project {
   display: flex;
   box-sizing: border-box;
   align-items: center;
@@ -810,7 +810,7 @@ position: absolute;
 width: 343px;
 height: 713px;
 left: calc(50% - 343px/2);
-top: 60px;
+top: 0;
 background: #FFFFFF;
 border: 1px solid #DFE1E6;
 border-radius: 16px;
@@ -837,6 +837,8 @@ border-radius: 16px;
   border-radius: 0px;
   bottom: 0px;  
   background: #C1C7D0;
+  backdrop-filter: blur(10px);
+  position: fixed;
   mix-blend-mode: multiply;
   z-index: 1;
   display: none;
