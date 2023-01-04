@@ -859,6 +859,10 @@ div.modal_flex {
   justify-content: space-between;
 }
 
+div.modal_flex div:first-child {
+  width: 60%;
+}
+
 
 
 }
