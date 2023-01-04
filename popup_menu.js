@@ -145,8 +145,9 @@ Model_show.querySelector('.html').innerHTML = arr[0].technologies[0]
 Model_show.querySelector('.css').innerHTML = arr[0].technologies[1]
 Model_show.querySelector('.javascript').innerHTML = arr[0].technologies[2]
 
-const Popup_show = document.querySelectorAll('.link_to_project')
+const popup_show = document.querySelectorAll('.link_to_project')
 const close_popup = document.querySelector('.close')
+
 
 
 function openPop() {
@@ -160,11 +161,14 @@ function closePop() {
 
 }
 
+popup_show.forEach(pop => {
+  pop.addEventListener('click', function(){
+    console.log("This is working")
+    openPop()
+  })
+})
 
-Popup_show.addEventListener('click', () => {
-  console.log('i am here')
-  openPop();
-});
+
 
 close_popup.addEventListener('click', () => {
   closePop();
