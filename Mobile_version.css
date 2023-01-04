@@ -382,7 +382,7 @@ a {
   color: #6070ff;
 }
 
-#link_to_project {
+.link_to_project {
   display: flex;
   box-sizing: border-box;
   align-items: center;
