@@ -6,7 +6,9 @@
 #shape,
 .work_container,
 .Img,
-.popup {
+.popup,
+.model
+ {
   display: none;
 }
 
@@ -182,7 +184,7 @@ main {
   top: 850px;
 }
 
-.work {
+.works {
   display: flex;
   flex-direction: row;
   height: 496px;
@@ -225,12 +227,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 24px;
+  padding-left: 64px;
   gap: 24px;
   position: relative;
   width: 544px;
   height: 445px;
-  left: -520px;
+  left: 0px;
   top: 50px;
 }
 
