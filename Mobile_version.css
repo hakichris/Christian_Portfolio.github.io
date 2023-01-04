@@ -843,3 +843,22 @@ border-radius: 16px;
   z-index: 1;
   display: none;
 }
+
+@media (min-width: 768px) {
+div.model{
+  width: 65%;
+  height: 90vh;
+}
+
+div.mode_image {
+  height: 50%;
+}
+
+div.modal_flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+}
