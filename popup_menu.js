@@ -167,9 +167,12 @@ function openPop() {
                             </li>
                             <li class="year"> </li>
                           </ul>
-                          <img src="images/Snapshoot Portfolio .png" alt="">
+                          <div class= " model_image">
+                          <img src=${projectArray[i].Featured_image} alt="">
+                          </div>
+                          <div class="works_details modal_flex">
                           <p class="project_description">
-
+                          ${projectArray[i].Project_descr_popup.slice(0, 200)}
                           </p>
                           <ul class="code_language">
                             <li ><a class="ht html" href="#"> </a></li>
@@ -179,13 +182,14 @@ function openPop() {
 
                           <div class="btn">
                           <button class="link_to_project">
-                            <a class="check_Project" href="https://hakichris.github.io/Christian_Portfolio.github.io/"> See live</a>
+                            <a class="check_Project" href=${projectArray[i].link_to_live_version}> See live</a>
                             <img src="images/Icon - Export.svg" alt="">
-                          </button>
-                          <button class="link_to_project">
-                            <a class="check_Project" href="https://github.com/hakichris/Christian_Portfolio.github.io.git">See Souce</a>
+                            </button>
+                            <button class="link_to_project">
+                            <a class="check_Project" href=${projectArray[i].link_to_live_version}>See Souce</a>
                             <img src="images/Vector 2.png" alt="">
-                          </button>
+                            </button>
+                          </div>
                           </div>
                         </div>
                         <img id="shape" src="images/Shape.png" alt="">
