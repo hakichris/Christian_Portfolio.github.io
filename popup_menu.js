@@ -39,7 +39,7 @@ option3.addEventListener('click', () => {
 
 var arr = [
  {
-  id: 'A',
+  id: '1',
   Project_name: 'TONIC',
   Featured_image: 'images/Snapshoot Portfolio .png',
   Feature_image_desk: 'images/Snapshoot Portfolio (4).png',
@@ -54,7 +54,7 @@ var arr = [
 },
 
 {
-  id:'B',
+  id:'2',
   Project_name: 'Multi-Post Stories',
   Featured_image: 'images/Snapshoot Portfolio (1).png',
   Feature_image_desk: 'images/Snapshoot Portfolio (5).png',
@@ -70,7 +70,7 @@ var arr = [
 },
 
 {
-  id:'C',
+  id:'3',
   Project_name: 'Facebook 360',
   Featured_image: 'images/Snapshoot Portfolio (2).png',
   Feature_image_desk: 'images/Snapshoot Portfolio (6).png',
@@ -87,7 +87,7 @@ var arr = [
 },
 
 {
-  id:'D',
+  id:'4',
   Project_name: 'Uber Navigation',
   Featured_image: 'images/Snapshoot Portfolio (3).png',
   Feature_image_desk: 'images/Snapshoot Portfolio (4).png',
@@ -136,24 +136,72 @@ for(let i = 0; i<arr.length; i++){
 
 }
 
-Model_show.querySelector('.project_name').innerHTML = arr[0].Project_name
-Model_show.querySelector('#h3').innerHTML = arr[0].Featured[0]
-Model_show.querySelector('.langue').innerHTML = arr[0].Featured[1]
-Model_show.querySelector('.year').innerHTML = arr[0].Featured[2]
-Model_show.querySelector('.project_description').innerHTML = arr[0].Project_descr_pop
-Model_show.querySelector('.html').innerHTML = arr[0].technologies[0]
-Model_show.querySelector('.css').innerHTML = arr[0].technologies[1]
-Model_show.querySelector('.javascript').innerHTML = arr[0].technologies[2]
+
 
 const popup_show = document.querySelectorAll('.link_to_project')
-const close_popup = document.querySelector('.close')
 
+console.log(popup_show[0])
 
 
 function openPop() {
-  const popup_open = document.querySelector('.model');
-  popup_open.style.display = 'block';
+  const model = document.querySelector('.model')
+  const overlay = document.createElement('div')
+  overlay.classList.add('overlay')
+
+
+  for(let i = 0; i < arr.length; i++){
+    const projectId = popup_show[i].id
+      if(projectId == arr[i].id){
+        console.log(arr[i].Project_name)
+        overlay.innerHTML = `<div class="Project info">
+                          <h3 class="project_name">${arr[i].Project_name}</h3>
+                          <img class="close" src="images/Enabled.png" alt="...">
+                          <ul class="client">
+                            <li id="h3"> </li>
+                            <li class="Counter">
+                              <img src="images/Counter.png" alt="" />
+                            </li>
+                            <li class="langue"> </li>
+                            <li class="Counter">
+                              <img src="images/Counter.png" alt=""/>
+                            </li>
+                            <li class="year"> </li>
+                          </ul>
+                          <img src="images/Snapshoot Portfolio .png" alt="">
+                          <p class="project_description">
+
+                          </p>
+                          <ul class="code_language">
+                            <li ><a class="ht html" href="#"> </a></li>
+                            <li ><a class="ht css" href="#"> </a></li>
+                            <li ><a class="ht javascript" href="#"> </a></li>
+                          </ul>
+
+                          <div class="btn">
+                          <button class="link_to_project">
+                            <a class="check_Project" href="https://hakichris.github.io/Christian_Portfolio.github.io/"> See live</a>
+                            <img src="images/Icon - Export.svg" alt="">
+                          </button>
+                          <button class="link_to_project">
+                            <a class="check_Project" href="https://github.com/hakichris/Christian_Portfolio.github.io.git">See Souce</a>
+                            <img src="images/Vector 2.png" alt="">
+                          </button>
+                          </div>
+                        </div>
+                        <img id="shape" src="images/Shape.png" alt="">
+                      `
+      model.appendChild(overlay)
+      const popup_open = document.querySelector('.model');
+      popup_open.style.display = 'block';
+      }
+  }
+  
+      
+
+
 }
+
+const close_popup = document.querySelector('.close')
 
 function closePop() {
   const popup_close = document.querySelector('.model');
@@ -168,9 +216,9 @@ popup_show.forEach(pop => {
   })
 })
 
-
-
 close_popup.addEventListener('click', () => {
   closePop();
 });
+
+
 
