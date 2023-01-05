@@ -41,8 +41,8 @@ var arr = [
  {
   id: '1',
   Project_name: 'TONIC',
-  Featured_image: 'images/SnapshootPortfolio.png',
-  Feature_image_desk: 'images/Snapshoot Portfolio (4).png',
+  Featured_image: 'images/Snapshoot_Portfolio .png',
+  Feature_image_desk: 'images/Snapshoot_Portfolio_(4).png',
   Featured: ['CANOPY','Back End Dev','2015'],
   Project_descr: [' A daily selection of privately personalized reads; no accounts or sign-ups required.', 'Exploring the future of media in Facebook s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.'],
   technologies:['html','javascript','css'],
@@ -56,8 +56,8 @@ var arr = [
 {
   id:'2',
   Project_name: 'Multi-Post Stories',
-  Featured_image: 'images/Snapshoot Portfolio (1).png',
-  Feature_image_desk: 'images/Snapshoot Portfolio (5).png',
+  Featured_image: 'images/Snapshoot_Portfolio_(1).png',
+  Feature_image_desk: 'images/Snapshoot_Portfolio_(5).png',
   Featured: ['CANOPY','Back End Dev','2015','FACEBOOK','Full Stack Dev',],
   image: ['<img src="images/Snapshoot Portfolio .png" alt=" Project snapshoot" />','images/Snapshoot Portfolio (4).png','images/Counter,png'],
   Project_descr: [' A daily selection of privately personalized reads; no accounts or sign-ups required.', 'Exploring the future of media in Facebook s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.'],
@@ -72,8 +72,8 @@ var arr = [
 {
   id:'3',
   Project_name: 'Facebook 360',
-  Featured_image: 'images/Snapshoot Portfolio (2).png',
-  Feature_image_desk: 'images/Snapshoot Portfolio (6).png',
+  Featured_image: 'images/Snapshoot_Portfolio_(2).png',
+  Feature_image_desk: 'images/Snapshoot_Portfolio_(6).png',
   Featured: ['CANOPY','Back End Dev','2015','FACEBOOK','Full Stack Dev',],
   image: ['<img src="images/Snapshoot Portfolio .png" alt=" Project snapshoot" />','images/Snapshoot Portfolio (4).png','images/Counter,png'],
   Project_descr: [' A daily selection of privately personalized reads; no accounts or sign-ups required.', 'Exploring the future of media in Facebook s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.'],
@@ -89,8 +89,8 @@ var arr = [
 {
   id:'4',
   Project_name: 'Uber Navigation',
-  Featured_image: 'images/Snapshoot Portfolio (3).png',
-  Feature_image_desk: 'images/Snapshoot Portfolio (4).png',
+  Featured_image: 'images/Snapshoot_Portfolio_(3).png',
+  Feature_image_desk: 'images/Snapshoot_Portfolio_(4).png',
   Featured: ['CANOPY','Back End Dev','2015','Uber','Lead Developer','2018'],
   image: ['<img src="images/Snapshoot Portfolio .png" alt=" Project snapshoot" />','images/Snapshoot Portfolio (4).png','images/Counter,png'],
   Project_descr: [' A daily selection of privately personalized reads; no accounts or sign-ups required.',' A daily selection of privately personalized reads; no accounts orsign-ups required.'],
@@ -172,9 +172,7 @@ function openPop() {
                                         </li>
                                         <li class="year"> ${arr[i].Featured[2]}</li>
                                   </ul>
-                                <div class= "model_image">
-                                 <img src='images/Snapshoot Portfolio (2).png' alt="Image_descrip">
-                                </div>
+                                 <img src=${arr[i].Featured_image} alt="Image_descr" class="model_image">
                           <div class="works_details model_flex">
                                      <p class="project_description">
                                     ${arr[i].Project_descr_pop}
