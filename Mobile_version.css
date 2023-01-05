@@ -818,9 +818,9 @@ border-radius: 16px;
 
 .close {
   position: absolute;
-  left: 290px;
+  left: 300px;
   right: 0;
-  top: 10px;
+  top: 20px;
 }
 .btn {
   display: flex;
@@ -836,7 +836,7 @@ border-radius: 16px;
   top: 0px;
   border-radius: 0px;
   bottom: 0px;  
-  background: #C1C7D0;
+  background: #d8dfe8;
   backdrop-filter: blur(10px);
   position: fixed;
   mix-blend-mode: multiply;
@@ -845,20 +845,52 @@ border-radius: 16px;
 }
 
 @media (min-width: 768px) {
+
 div.model{
-  width: 65%;
-  height: 90vh;
+  background: #d8dfe8;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  mix-blend-mode: multiply;
+  left: 0;
+  top: 0;
+  width: 150%;
+  height: 100vh;
 }
 
-div.mode_image {
-  height: 50%;
+div.overlay{
+display: flex;
+align-items: flex-start;
+top: 5%;
+left: 200px;
+width: 50%;
+height: 90vh;
 }
 
-div.modal_flex {
+div.model_image {
+  position: relative;
+  height: 300%;
+  width: 300%;
+}
+
+.close{
+  position: absolute;
+  left: 950px;
+  right: 0;
+  top: 20px;
+}
+
+
+div.model_flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
+.btn{
+ position: absolute;
+ top: 370px;
+ left: 470px;
+
+}
 div.modal_flex div:first-child {
   width: 60%;
 }
