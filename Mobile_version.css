@@ -826,6 +826,7 @@ h4 {
   right: 0;
   top: 20px;
 }
+
 .btn {
   display: flex;
   flex-direction: row;
@@ -849,6 +850,7 @@ h4 {
 }
 
 @media (min-width: 768px) {
+
   div.model {
     background: #d8dfe8;
     backdrop-filter: blur(10px);
@@ -896,6 +898,7 @@ h4 {
     top: 390px;
     left: 470px;
   }
+
   div.modal_flex div:first-child {
     width: 60%;
   }
