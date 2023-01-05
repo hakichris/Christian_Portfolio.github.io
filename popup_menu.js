@@ -33,9 +33,8 @@ option2.addEventListener('click', () => {
 option3.addEventListener('click', () => {
   closeDiv();
 });
-
-// Detail popup window start here. 
-let arr = [
+ 
+const arr = [
  {
   id:  '1',
   Project_name:  'TONIC',
