@@ -153,7 +153,7 @@ for (let i = 0; i < arr.length; i += 1) {
   worksdesk[i].querySelector('.javascript').innerHTML = arr[i].technologies2;
 }
 
-const popupshow = document.querySelectorAll('.link_to_project');
+const popupshow = document.querySelectorAll('.mob_link');
 const image = document.createElement('img');
 image.setAttribute('src', 'images/Enabled.png');
 image.setAttribute('class', 'close');
@@ -164,65 +164,67 @@ function openPop() {
   overlay.classList.add('overlay');
 
   popupshow.forEach((pop) => {
-    const projectId = pop.id;
-    for (let i = 0; i < arr.length; i += 1) {
-      if (projectId === arr[i].id) {
-        overlay.innerHTML = `<div class="Project info">
-                                <h3 class="project_name name">${arr[i].Project_name}</h3>
-                                <div class="overlayImage"></div>
-                                 <ul class="client">
-                                         <li id="h3">${arr[i].Featured0} </li>
-                                         <li class="Counter">
-                                         <img src="images/Counter.png" alt="" />
-                                        </li>
-                                         <li class="langue"> ${arr[i].Featured1}</li>
-                                         <li class="Counter">
-                                          <img src="images/Counter.png" alt=""/>
-                                        </li>
-                                        <li class="year"> ${arr[i].Featured2}</li>
-                                  </ul>
-                                 <div><img src=${arr[i].Featured_image} alt="Image_descr" class="model_image"></div>
-                                 <div class="works_details model_flex">
-                                     <p class="project_description">
-                                    ${arr[i].Project_descr_pop}
-                                     </p>
-                                    <ul class="code_language">
-                                        <li ><a class="ht html" href="#"> ${arr[i].technologies0}</a></li>
-                                        <li ><a class="ht css" href="#"> ${arr[i].technologies1}</a></li>
-                                            <li ><a class="ht javascript" href="#"> ${arr[i].technologies2}</a></li>
-                                      </ul>
-
-                                  <div class="btn">
-                                    <button class="link_to_project">
-                                    <a class="check_Project" href=${arr[i].link_to_live_version}> See live</a>
-                                      <img src="images/Icon - Export.svg" alt="">
+    pop.addEventListener('click', function handleClick(e){
+      for (let i = 0; i <= arr.length; i++) {
+        if (pop.id === arr[i]?.id) {
+          console.log(arr[i].Project_name)
+          overlay.innerHTML = `<div class="Project info">
+                                  <h3 class="project_name name">${arr[i].Project_name}</h3>
+                                  <div class="overlayImage"></div>
+                                   <ul class="client">
+                                           <li id="h3">${arr[i].Featured0} </li>
+                                           <li class="Counter">
+                                           <img src="images/Counter.png" alt="" />
+                                          </li>
+                                           <li class="langue"> ${arr[i].Featured1}</li>
+                                           <li class="Counter">
+                                            <img src="images/Counter.png" alt=""/>
+                                          </li>
+                                          <li class="year"> ${arr[i].Featured2}</li>
+                                    </ul>
+                                   <div><img src=${arr[i].Featured_image} alt="Image_descr" class="model_image"></div>
+                                   <div class="works_details model_flex">
+                                       <p class="project_description">
+                                      ${arr[i].Project_descr_pop}
+                                       </p>
+                                      <ul class="code_language">
+                                          <li ><a class="ht html" href="#"> ${arr[i].technologies0}</a></li>
+                                          <li ><a class="ht css" href="#"> ${arr[i].technologies1}</a></li>
+                                              <li ><a class="ht javascript" href="#"> ${arr[i].technologies2}</a></li>
+                                        </ul>
+  
+                                    <div class="btn">
+                                      <button class="link_to_project">
+                                      <a class="check_Project" href=${arr[i].link_to_live_version}> See live</a>
+                                        <img src="images/Icon - Export.svg" alt="">
+                                        </button>
+                                      <button class="link_to_project">
+                                            <a class="check_Project" href=${arr[i].link_to_live_version}>See Souce</a>
+                                        <img src="images/Vector 2.png" alt="">
                                       </button>
-                                    <button class="link_to_project">
-                                          <a class="check_Project" href=${arr[i].link_to_live_version}>See Souce</a>
-                                      <img src="images/Vector 2.png" alt="">
-                                    </button>
+                                    </div>
+                                    </div>
                                   </div>
-                                  </div>
-                                </div>
-                                <img id="shape" src="images/Shape.png" alt="">
-                      `;
-        model.appendChild(overlay);
-        model.style.display = 'block';
-        const modalImage = document.querySelector('.overlayImage');
-        modalImage.appendChild(image);
+                                  <img id="shape" src="images/Shape.png" alt="">
+                        `;
+          model.appendChild(overlay);
+          model.style.display = 'block';
+          const modalImage = document.querySelector('.overlayImage');
+          modalImage.appendChild(image);
+
+          const closepopup = document.querySelector('.close');
+          closepopup.addEventListener('click', () => {
+            closePop();
+          });
+        }
       }
-    }
+    })
   });
 
   function closePop() {
     const popupclose = document.querySelector('.model');
     popupclose.style.display = 'none';
   }
-
-  const closepopup = document.querySelector('.close');
-  closepopup.addEventListener('click', () => {
-    closePop();
-  });
 }
 
 popupshow.forEach((key) => {
@@ -230,3 +232,5 @@ popupshow.forEach((key) => {
     openPop();
   });
 });
+
+openPop()
