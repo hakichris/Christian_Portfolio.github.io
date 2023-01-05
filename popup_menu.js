@@ -218,10 +218,6 @@ function openPop() {
   
 }
 
-
-
-
-
 function closePop() {
   const popup_close = document.querySelector('.model');
   popup_close.style.display = 'none';
