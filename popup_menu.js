@@ -139,8 +139,7 @@ for (let i = 0; i < arr.length; i += 1) {
   works[i].querySelector('#h3').innerHTML = arr[i].Featured0;
   works[i].querySelector('.langue').innerHTML = arr[i].Featured1;
   works[i].querySelector('.year').innerHTML = arr[i].Featured2;
-  works[i].querySelector('.project_description').innerHTML =
-    arr[i].Project_descr;
+  works[i].querySelector('.project_description').innerHTML = arr[i].Project_descr;
   works[i].querySelector('.html').innerHTML = arr[i].technologies0;
   works[i].querySelector('.css').innerHTML = arr[i].technologies1;
   works[i].querySelector('.javascript').innerHTML = arr[i].technologies2;
@@ -148,8 +147,7 @@ for (let i = 0; i < arr.length; i += 1) {
   worksdesk[i].querySelector('#h3').innerHTML = arr[i].Featured0;
   worksdesk[i].querySelector('.langue').innerHTML = arr[i].Featured1;
   worksdesk[i].querySelector('.year').innerHTML = arr[i].Featured2;
-  worksdesk[i].querySelector('.project_description').innerHTML =
-    arr[i].Project_descr;
+  worksdesk[i].querySelector('.project_description').innerHTML = arr[i].Project_descr;
   worksdesk[i].querySelector('.html').innerHTML = arr[i].technologies0;
   worksdesk[i].querySelector('.css').innerHTML = arr[i].technologies1;
   worksdesk[i].querySelector('.javascript').innerHTML = arr[i].technologies2;
