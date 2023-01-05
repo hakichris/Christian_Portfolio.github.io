@@ -167,43 +167,47 @@ function openPop() {
     const projectId = pop.id;
     for (let i = 0; i < arr.length; i += 1) {
       if (projectId === arr[i].id) {
-        overlay.innerHTML = `<div class="Project info">
-                                <h3 class="project_name name">${arr[i].Project_name}</h3>
-                                <div class="overlayImage"></div>
-                                 <ul class="client">
-                                         <li id="h3">${arr[i].Featured0} </li>
-                                         <li class="Counter">
+        overlay.innerHTML = `<div class="Project">
+                                <div class="overlayImage">
+                                <h3 class="name">${arr[i].Project_name}</h3>
+                                </div>
+                                 <ul class="techno">
+                                         <li class="techoName">${arr[i].Featured0} </li>
+                                         <li class="Smallicon">
                                          <img src="images/Counter.png" alt="" />
                                         </li>
-                                         <li class="langue"> ${arr[i].Featured1}</li>
-                                         <li class="Counter">
+                                         <li class="devO"> ${arr[i].Featured1}</li>
+                                         <li class="Smallicon">
                                           <img src="images/Counter.png" alt=""/>
                                         </li>
-                                        <li class="year"> ${arr[i].Featured2}</li>
+                                        <li class="DATE"> ${arr[i].Featured2}</li>
                                   </ul>
                                  <div><img src=${arr[i].Featured_image} alt="Image_descr" class="model_image"></div>
-                                 <div class="works_details model_flex">
-                                     <p class="project_description">
+                                 <div class="worksdetails">
+                                     <p class="Description">
                                     ${arr[i].Project_descr_pop}
                                      </p>
-                                    <ul class="code_language">
-                                        <li ><a class="ht html" href="#"> ${arr[i].technologies0}</a></li>
-                                        <li ><a class="ht css" href="#"> ${arr[i].technologies1}</a></li>
-                                            <li ><a class="ht javascript" href="#"> ${arr[i].technologies2}</a></li>
-                                      </ul>
 
-                                  <div class="btn">
-                                    <button class="link_to_project">
-                                    <a class="check_Project" href=${arr[i].link_to_live_version}> See live</a>
-                                      <img src="images/Icon - Export.svg" alt="">
-                                      </button>
-                                    <button class="link_to_project">
-                                          <a class="check_Project" href=${arr[i].link_to_live_version}>See Souce</a>
-                                      <img src="images/Vector 2.png" alt="">
-                                    </button>
-                                  </div>
-                                  </div>
-                                </div>
+                                     <div class="details">
+                                          <ul class="technology">
+                                        <li><a class="HTML" href="#"> ${arr[i].technologies0}</a></li>
+                                        <li><a class="CSS" href="#"> ${arr[i].technologies2}</a></li>
+                                        <li><a class="JAVA" href="#"> ${arr[i].technologies1}</a></li>
+                                           </ul>
+
+                                            <div class="btn">
+                                              <button class="Butt">
+                                              <a class="Check" href=${arr[i].link_to_live_version}> See live</a>
+                                                <img src="images/Icon - Export.svg" alt="">
+                                                </button>
+                                               <button class="Butt">
+                                                      <a class="Check" href=${arr[i].link_to_live_version}>See Souce</a>
+                                                       <img src="images/Vector 2.png" alt="">
+                                               </button>
+                                            </div>
+                                       </div>
+                                     </div>
+                                   </div>
                                 <img id="shape" src="images/Shape.png" alt="">
                       `;
         model.appendChild(overlay);
