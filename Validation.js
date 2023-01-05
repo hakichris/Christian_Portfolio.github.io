@@ -9,10 +9,13 @@ function validate() {
       document.getElementById('error-message').style.color = 'white';
       document.getElementById('error-message').style.background = 'red';
       document.getElementById('error-message').style.textAlign = 'center';
+      console.log("i am inside");
       e.preventDefault();
     }
   };
 }
+
 formButton.addEventListener('click', () => {
   validate();
+  console.log("I passed this")
 });
