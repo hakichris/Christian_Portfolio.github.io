@@ -30,7 +30,7 @@ const arr = [
   {
     id: '1',
     Project_name: 'TONIC',
-    Featured_image: 'images/Snapshoot_Portfolio .png',
+    Featured_image: 'images/Snapshoot_Portfolio.png',
     Feature_image_desk: 'images/Snapshoot_Portfolio_(4).png',
     Featured0: 'CANOPY',
     Featured1: 'Back End Dev',
