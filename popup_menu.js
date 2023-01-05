@@ -225,8 +225,10 @@ function openPop() {
   });
 }
 
-for (const box of popupshow) {
-  box.addEventListener('click', () => {
-    openPop();
-  });
-}
+
+popupshow.forEach(key =>{
+  key.addEventListener('click', () => {
+        openPop();
+      });
+})
+
