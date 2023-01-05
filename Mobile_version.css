@@ -165,7 +165,8 @@ h2 {
 .Icons,
 .Icons_desktop,
 .Image_desktop,
-.image {
+.image
+ {
   display: none;
 }
 
@@ -866,7 +867,7 @@ width: 50%;
 height: 90vh;
 }
 
-div.model_image {
+div.model_image_desk {
   position: relative;
   height: 300%;
   width: 300%;
@@ -874,7 +875,7 @@ div.model_image {
 
 .close{
   position: absolute;
-  left: 950px;
+  left: 900px;
   right: 0;
   top: 20px;
 }
@@ -894,7 +895,5 @@ div.model_flex {
 div.modal_flex div:first-child {
   width: 60%;
 }
-
-
 
 }
