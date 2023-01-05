@@ -955,6 +955,12 @@ h4 {
   background-color: #fff;
 }
 
+#error-message {
+  position: absolute;
+  bottom: 135px;
+  left: 25px;
+}
+
 @media (min-width: 768px) {
   .model {
     position: fixed;
@@ -1044,5 +1050,11 @@ h4 {
 
   .btn {
     margin: 0;
+  }
+
+  #error-message {
+    position: absolute;
+    bottom: -75px;
+    left: 80px;
   }
 }

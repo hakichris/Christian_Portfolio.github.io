@@ -1,6 +1,6 @@
 const formButton = document.querySelector('.form_button');
 function Validate() {
-  const text = document.getElementById('mail').value;
+  const text = document.getElementById('email').value;
   const validator = /^[a-z]+[^\s]+\.[^\s]+$/g;
   document.forms[0].onsubmit = function email(e) {
     if (!validator.test(text)) {
