@@ -420,7 +420,7 @@ a {
   color: #6070ff;
 }
 
-.btn {
+.link_to_project {
   display: flex;
   box-sizing: border-box;
   align-items: center;
@@ -836,45 +836,4 @@ h5 {
   bottom: -5px;
 }
 
-.overlay {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 16px;
-  gap: 12px;
-  position: absolute;
-  width: 343px;
-  height: 713px;
-  left: calc(50% - 343px/2);
-  top: 60px;
-  background: #FFFFFF;
-  border: 1px solid #DFE1E6;
-  border-radius: 16px;
-  }
-  
-  .close {
-    position: absolute;
-    left: 290px;
-    right: 0;
-    top: 10px;
-  }
-  .btn {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-  }
-  
-  .model {
-    position: absolute;
-    height: 823px;
-    width: 375px;
-    left: 0px;
-    top: 0px;
-    border-radius: 0px;
-    bottom: 0px;  
-    background: #C1C7D0;
-    mix-blend-mode: multiply;
-    z-index: 1;
-    display: none;
-  }
+ 
