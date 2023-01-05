@@ -247,6 +247,6 @@ function closePop() {
   popup_close.style.display = 'none';
 }
 
-close_popup.addEventListener('click', function onClick() {
+close_popup.addEventListener('click', () => {
   closePop();
 });
