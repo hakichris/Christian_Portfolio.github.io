@@ -7,8 +7,7 @@
 .work_container,
 .Img,
 .popup,
-.model
- {
+.model {
   display: none;
 }
 
@@ -232,7 +231,7 @@ main {
   position: relative;
   width: 544px;
   height: 445px;
-  left: 0px;
+  left: 0;
   top: 50px;
 }
 
@@ -835,5 +834,3 @@ h5 {
   left: 50.34px;
   bottom: -5px;
 }
-
- 
