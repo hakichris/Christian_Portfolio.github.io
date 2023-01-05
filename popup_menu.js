@@ -146,7 +146,7 @@ image.setAttribute('class', 'close');
 function closePop() {
   const popupclose = document.querySelector('.model');
   popupclose.style.display = 'none';
-  }
+}
 function openPop() {
   const model = document.querySelector('.model');
   const overlay = document.createElement('div');
@@ -197,8 +197,7 @@ function openPop() {
                </div>
         </div>
         <img id="shape" src="images/Shape.png" alt="">
-        `;
-         
+        `;        
           model.appendChild(overlay);
           model.style.display = 'block';
           const modalImage = document.querySelector('.overlayImage');
