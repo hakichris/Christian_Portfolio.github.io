@@ -7,8 +7,7 @@
 .work_container,
 .Img,
 .popup,
-.model
- {
+.model {
   display: none;
 }
 
@@ -44,7 +43,7 @@ ul {
   height: 40px;
   left: 100px;
   top: 20px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -70,7 +69,7 @@ ul {
 .me {
   width: 63px;
   height: 20px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -83,7 +82,7 @@ ul {
 }
 
 .intro {
-  background-image: url("images/Header bg.svg");
+  background-image: url('images/Header bg.svg');
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
   display: flex;
@@ -104,7 +103,7 @@ ul {
   width: 600px;
   height: 120px;
   padding-left: 170px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -121,7 +120,7 @@ ul {
   padding-left: 200px;
   width: 920px;
   height: 98px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -132,7 +131,7 @@ ul {
 #connect {
   position: relative;
   top: 20px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -232,7 +231,7 @@ main {
   position: relative;
   width: 544px;
   height: 445px;
-  left: 0px;
+  left: 0;
   top: 50px;
 }
 
@@ -252,7 +251,7 @@ main {
 .project_name {
   width: 295px;
   height: 36px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -277,7 +276,7 @@ main {
 #h3 {
   width: 96px;
   height: 24px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -296,7 +295,7 @@ main {
 .langue {
   width: 130px;
   height: 24px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -310,7 +309,7 @@ main {
 .year {
   width: 38px;
   height: 24px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -322,7 +321,7 @@ main {
   width: 450px;
   height: 70px;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -344,7 +343,7 @@ main {
 .html {
   width: 60px;
   height: 25px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -373,7 +372,7 @@ main {
 .ruby {
   width: 81px;
   height: 16px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -388,7 +387,7 @@ main {
 .css {
   width: 50px;
   height: 25px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -403,7 +402,7 @@ main {
 .javascript {
   width: 80px;
   height: 25px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -438,7 +437,7 @@ a {
 
 .check_Project:hover {
   height: fit-content;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -485,7 +484,7 @@ a {
 #about {
   width: 200px;
   height: fit-content;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -502,7 +501,7 @@ a {
 .text {
   width: 400px;
   height: 102px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -518,7 +517,7 @@ a {
   top: -10px;
   width: 150px;
   height: 24px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -556,7 +555,7 @@ a {
   height: 24px;
   width: 138px;
   top: 12px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -593,7 +592,7 @@ a {
   left: 24px;
   right: 78px;
   top: -10px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -648,7 +647,7 @@ a {
   height: 24px;
   left: -35px;
   top: 80px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -699,7 +698,7 @@ a {
   left: 10px;
   top: 0;
   list-style-type: none;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -710,7 +709,7 @@ a {
   position: relative;
   left: 10px;
   top: 35px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -750,7 +749,7 @@ h5 {
   height: 56px;
   left: -1px;
   top: 110px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -768,7 +767,7 @@ h5 {
   height: 102px;
   left: 24px;
   top: 95px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
@@ -810,7 +809,7 @@ h5 {
   left: 150px;
   border-radius: 8px;
   padding: 12px 16px 12px 16px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -835,5 +834,3 @@ h5 {
   left: 50.34px;
   bottom: -5px;
 }
-
- 
