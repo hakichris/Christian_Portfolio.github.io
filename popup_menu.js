@@ -197,7 +197,7 @@ function openPop() {
                </div>
         </div>
         <img id="shape" src="images/Shape.png" alt="">
-        `;        
+        `;
           model.appendChild(overlay);
           model.style.display = 'block';
           const modalImage = document.querySelector('.overlayImage');
