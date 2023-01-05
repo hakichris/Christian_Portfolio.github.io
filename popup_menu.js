@@ -3,37 +3,29 @@ const hamburger = document.querySelector('#hamburger');
 const option1 = document.querySelector('.port');
 const option2 = document.querySelector('.Ab');
 const option3 = document.querySelector('.cont');
-
 function openDiv() {
   const popup = document.querySelector('#popup');
   popup.style.display = 'block';
 }
-
 function closeDiv() {
   const get = document.querySelector('#popup');
   get.style.display = 'none';
 }
-
 cancel.addEventListener('click', () => {
   closeDiv();
 });
-
 hamburger.addEventListener('click', () => {
   openDiv();
 });
-
 option1.addEventListener('click', () => {
   closeDiv();
 });
-
 option2.addEventListener('click', () => {
   closeDiv();
 });
-
 option3.addEventListener('click', () => {
   closeDiv();
 });
-
 const arr = [
   {
     id: '1',
@@ -54,7 +46,6 @@ const arr = [
       'https://hakichris.github.io/Christian_Portfolio.github.io/',
     Source: 'https://github.com/hakichris/Christian_Portfolio.github.io.git',
   },
-
   {
     id: '2',
     Project_name: 'Multi-Post Stories',
@@ -77,7 +68,6 @@ const arr = [
       'https://hakichris.github.io/Christian_Portfolio.github.io/',
     Source: 'https://github.com/hakichris/Christian_Portfolio.github.io.git',
   },
-
   {
     id: '3',
     Project_name: 'Facebook 360',
@@ -100,7 +90,6 @@ const arr = [
       'https://hakichris.github.io/Christian_Portfolio.github.io/',
     Source: 'https://github.com/hakichris/Christian_Portfolio.github.io.git',
   },
-
   {
     id: '4',
     Project_name: 'Uber Navigation',
@@ -124,10 +113,8 @@ const arr = [
     Source: 'https://github.com/hakichris/Christian_Portfolio.github.io.git',
   },
 ];
-
 const works = document.querySelectorAll('.work');
 const worksdesk = document.querySelectorAll('.works');
-
 for (let i = 0; i < arr.length; i += 1) {
   const image = document.createElement('img');
   const images = document.createElement('img');
@@ -152,66 +139,66 @@ for (let i = 0; i < arr.length; i += 1) {
   worksdesk[i].querySelector('.css').innerHTML = arr[i].technologies1;
   worksdesk[i].querySelector('.javascript').innerHTML = arr[i].technologies2;
 }
-
-const popupshow = document.querySelectorAll('.mob_link');
+const popupshow = document.querySelectorAll('.link_to_project');
 const image = document.createElement('img');
 image.setAttribute('src', 'images/Enabled.png');
 image.setAttribute('class', 'close');
-
 function openPop() {
   const model = document.querySelector('.model');
   const overlay = document.createElement('div');
   overlay.classList.add('overlay');
-
   popupshow.forEach((pop) => {
     pop.addEventListener('click', function handleClick(e){
       for (let i = 0; i <= arr.length; i++) {
         if (pop.id === arr[i]?.id) {
           console.log(arr[i].Project_name)
-          overlay.innerHTML = `<div class="Project info">
-                                  <h3 class="project_name name">${arr[i].Project_name}</h3>
-                                  <div class="overlayImage"></div>
-                                   <ul class="client">
-                                           <li id="h3">${arr[i].Featured0} </li>
-                                           <li class="Counter">
-                                           <img src="images/Counter.png" alt="" />
-                                          </li>
-                                           <li class="langue"> ${arr[i].Featured1}</li>
-                                           <li class="Counter">
-                                            <img src="images/Counter.png" alt=""/>
-                                          </li>
-                                          <li class="year"> ${arr[i].Featured2}</li>
-                                    </ul>
-                                   <div><img src=${arr[i].Featured_image} alt="Image_descr" class="model_image"></div>
-                                   <div class="works_details model_flex">
-                                       <p class="project_description">
-                                      ${arr[i].Project_descr_pop}
-                                       </p>
-                                      <ul class="code_language">
-                                          <li ><a class="ht html" href="#"> ${arr[i].technologies0}</a></li>
-                                          <li ><a class="ht css" href="#"> ${arr[i].technologies1}</a></li>
-                                              <li ><a class="ht javascript" href="#"> ${arr[i].technologies2}</a></li>
-                                        </ul>
-  
-                                    <div class="btn">
-                                      <button class="link_to_project">
-                                      <a class="check_Project" href=${arr[i].link_to_live_version}> See live</a>
-                                        <img src="images/Icon - Export.svg" alt="">
-                                        </button>
-                                      <button class="link_to_project">
-                                            <a class="check_Project" href=${arr[i].link_to_live_version}>See Souce</a>
-                                        <img src="images/Vector 2.png" alt="">
-                                      </button>
-                                    </div>
-                                    </div>
-                                  </div>
-                                  <img id="shape" src="images/Shape.png" alt="">
-                        `;
+          overlay.innerHTML = `<div class="Project">
+          <div class="overlayImage">
+          <h3 class="name">${arr[i].Project_name}</h3>
+          </div>
+           <ul class="techno">
+                   <li class="techoName">${arr[i].Featured0} </li>
+                   <li class="Smallicon">
+                   <img src="images/Counter.png" alt="" />
+                  </li>
+                   <li class="devO"> ${arr[i].Featured1}</li>
+                   <li class="Smallicon">
+                    <img src="images/Counter.png" alt=""/>
+                  </li>
+                  <li class="DATE"> ${arr[i].Featured2}</li>
+            </ul>
+           <div><img src=${arr[i].Featured_image} alt="Image_descr" class="model_image"></div>
+           <div class="worksdetails">
+               <p class="Description">
+              ${arr[i].Project_descr_pop}
+               </p>
+
+               <div class="details">
+                    <ul class="technology">
+                  <li><a class="HTML" href="#"> ${arr[i].technologies0}</a></li>
+                  <li><a class="CSS" href="#"> ${arr[i].technologies2}</a></li>
+                  <li><a class="JAVA" href="#"> ${arr[i].technologies1}</a></li>
+                     </ul>
+
+                      <div class="btn">
+                        <button class="Butt">
+                        <a class="Check" href=${arr[i].link_to_live_version}> See live</a>
+                          <img src="images/Icon - Export.svg" alt="">
+                          </button>
+                         <button class="Butt">
+                                <a class="Check" href=${arr[i].link_to_live_version}>See Souce</a>
+                                 <img src="images/Vector 2.png" alt="">
+                         </button>
+                      </div>
+                 </div>
+               </div>
+             </div>
+          <img id="shape" src="images/Shape.png" alt="">
+                  `;
           model.appendChild(overlay);
           model.style.display = 'block';
           const modalImage = document.querySelector('.overlayImage');
           modalImage.appendChild(image);
-
           const closepopup = document.querySelector('.close');
           closepopup.addEventListener('click', () => {
             closePop();
@@ -220,17 +207,14 @@ function openPop() {
       }
     })
   });
-
   function closePop() {
     const popupclose = document.querySelector('.model');
     popupclose.style.display = 'none';
   }
 }
-
 popupshow.forEach((key) => {
   key.addEventListener('click', () => {
     openPop();
   });
 });
 
-openPop()
