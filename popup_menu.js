@@ -40,14 +40,14 @@ const arr = [
     Project_name: 'TONIC',
     Featured_image: 'images/Snapshoot_Portfolio .png',
     Feature_image_desk: 'images/Snapshoot_Portfolio_(4).png',
-    Featured0: 'CANOPY', 
-    Featured1:'Back End Dev',
+    Featured0: 'CANOPY',
+    Featured1: 'Back End Dev',
     Featured2: '2015',
-    Project_descr: 
+    Project_descr:
       ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    technologies0: 'html', 
-    technologies1:'javascript', 
-    technologies2:'css',
+    technologies0: 'html',
+    technologies1: 'javascript',
+    technologies2: 'css',
     Project_descr_pop:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     link_to_live_version:
@@ -60,17 +60,17 @@ const arr = [
     Project_name: 'Multi-Post Stories',
     Featured_image: 'images/Snapshoot_Portfolio_(1).png',
     Feature_image_desk: 'images/Snapshoot_Portfolio_(5).png',
-    Featured0: 'CANOPY', 
-    Featured1: 'Back End Dev', 
-    Featured2: '2015', 
-    Featured3: 'FACEBOOK', 
+    Featured0: 'CANOPY',
+    Featured1: 'Back End Dev',
+    Featured2: '2015',
+    Featured3: 'FACEBOOK',
     Featured4: 'Full Stack Dev',
-    Project_descr: 
+    Project_descr:
       ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies0: 'html',
-    technologies1: 'javascript', 
-    technologies2:'css', 
-    technologies3:'Ruby on rails',
+    technologies1: 'javascript',
+    technologies2: 'css',
+    technologies3: 'Ruby on rails',
     Project_descr_pop:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     link_to_live_version:
@@ -83,17 +83,17 @@ const arr = [
     Project_name: 'Facebook 360',
     Featured_image: 'images/Snapshoot_Portfolio_(2).png',
     Feature_image_desk: 'images/Snapshoot_Portfolio_(6).png',
-    Featured0: 'CANOPY', 
-    Featured1: 'Back End Dev', 
-    Featured2: '2015', 
-    Featured3: 'FACEBOOK', 
+    Featured0: 'CANOPY',
+    Featured1: 'Back End Dev',
+    Featured2: '2015',
+    Featured3: 'FACEBOOK',
     Featured4: 'Full Stack Dev',
-    Project_descr: 
+    Project_descr:
       ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies0: 'html',
-    technologies1: 'javascript', 
-    technologies2:'css', 
-    technologies3:'Ruby on rails',
+    technologies1: 'javascript',
+    technologies2: 'css',
+    technologies3: 'Ruby on rails',
     Project_descr_pop:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     link_to_live_version:
@@ -106,17 +106,17 @@ const arr = [
     Project_name: 'Uber Navigation',
     Featured_image: 'images/Snapshoot_Portfolio_(3).png',
     Feature_image_desk: 'images/Snapshoot_Portfolio_(4).png',
-    Featured0: 'CANOPY', 
-    Featured1: 'Back End Dev', 
-    Featured2: '2015', 
-    Featured3: 'FACEBOOK', 
+    Featured0: 'CANOPY',
+    Featured1: 'Back End Dev',
+    Featured2: '2015',
+    Featured3: 'FACEBOOK',
     Featured4: 'Full Stack Dev',
     Project_descr:
       ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies0: 'html',
-    technologies1: 'javascript', 
-    technologies2:'css', 
-    technologies3:'Ruby on rails', 
+    technologies1: 'javascript',
+    technologies2: 'css',
+    technologies3: 'Ruby on rails',
     Project_descr_pop:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     link_to_live_version:
@@ -139,7 +139,8 @@ for (let i = 0; i < arr.length; i += 1) {
   works[i].querySelector('#h3').innerHTML = arr[i].Featured0;
   works[i].querySelector('.langue').innerHTML = arr[i].Featured1;
   works[i].querySelector('.year').innerHTML = arr[i].Featured2;
-  works[i].querySelector('.project_description').innerHTML = arr[i].Project_descr;
+  works[i].querySelector('.project_description').innerHTML =
+    arr[i].Project_descr;
   works[i].querySelector('.html').innerHTML = arr[i].technologies0;
   works[i].querySelector('.css').innerHTML = arr[i].technologies1;
   works[i].querySelector('.javascript').innerHTML = arr[i].technologies2;
@@ -147,7 +148,8 @@ for (let i = 0; i < arr.length; i += 1) {
   worksdesk[i].querySelector('#h3').innerHTML = arr[i].Featured0;
   worksdesk[i].querySelector('.langue').innerHTML = arr[i].Featured1;
   worksdesk[i].querySelector('.year').innerHTML = arr[i].Featured2;
-  worksdesk[i].querySelector('.project_description').innerHTML = arr[i].Project_descr;
+  worksdesk[i].querySelector('.project_description').innerHTML =
+    arr[i].Project_descr;
   worksdesk[i].querySelector('.html').innerHTML = arr[i].technologies0;
   worksdesk[i].querySelector('.css').innerHTML = arr[i].technologies1;
   worksdesk[i].querySelector('.javascript').innerHTML = arr[i].technologies2;
@@ -210,7 +212,7 @@ function openPop() {
         model.style.display = 'block';
         const modalImage = document.querySelector('.overlayImage');
         modalImage.appendChild(image);
-      } 
+      }
     }
   });
 
@@ -230,5 +232,3 @@ for (const box of popupshow) {
     openPop();
   });
 }
-
-
