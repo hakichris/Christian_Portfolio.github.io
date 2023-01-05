@@ -59,11 +59,6 @@ const arr = [
     Featured_image: 'images/Snapshoot_Portfolio_(1).png',
     Feature_image_desk: 'images/Snapshoot_Portfolio_(5).png',
     Featured: ['CANOPY', 'Back End Dev', '2015', 'FACEBOOK', 'Full Stack Dev'],
-    image: [
-      '<img src="images/Snapshoot Portfolio .png" alt=" Project snapshoot" />',
-      'images/Snapshoot Portfolio (4).png',
-      'images/Counter,png',
-    ],
     Project_descr: [
       ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
       'Exploring the future of media in Facebook s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
@@ -82,17 +77,11 @@ const arr = [
     Featured_image: 'images/Snapshoot_Portfolio_(2).png',
     Feature_image_desk: 'images/Snapshoot_Portfolio_(6).png',
     Featured: ['CANOPY', 'Back End Dev', '2015', 'FACEBOOK', 'Full Stack Dev'],
-    image: [
-      '<img src="images/Snapshoot Portfolio .png" alt=" Project snapshoot" />',
-      'images/Snapshoot Portfolio (4).png',
-      'images/Counter,png',
-    ],
     Project_descr: [
       ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
       'Exploring the future of media in Facebook s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
     ],
     technologies: ['html', 'javascript', 'css', 'Ruby on rails'],
-    image: 'images/Counter.png',
     Project_descr_pop:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     link_to_live_version:
@@ -113,17 +102,11 @@ const arr = [
       'Lead Developer',
       '2018',
     ],
-    image: [
-      '<img src="images/Snapshoot Portfolio .png" alt=" Project snapshoot" />',
-      'images/Snapshoot Portfolio (4).png',
-      'images/Counter,png',
-    ],
     Project_descr: [
       ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
       ' A daily selection of privately personalized reads; no accounts orsign-ups required.',
     ],
     technologies: ['html', 'javascript', 'css', 'Ruby on rails'],
-    image: 'images/Counter.png',
     Project_descr_pop:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     link_to_live_version:
@@ -133,8 +116,7 @@ const arr = [
 ];
 
 const works = document.querySelectorAll('.work');
-const works_desk = document.querySelectorAll('.works');
-const Model_show = document.querySelector('.model');
+const worksdesk = document.querySelectorAll('.works');
 
 for (let i = 0; i < arr.length; i++) {
   const image = document.createElement('img');
@@ -142,7 +124,7 @@ for (let i = 0; i < arr.length; i++) {
   image.setAttribute('src', arr[i].Featured_image);
   images.setAttribute('src', arr[i].Feature_image_desk);
   works[i].appendChild(image);
-  works_desk[i].appendChild(images);
+  worksdesk[i].appendChild(images);
   works[i].querySelector('.project_name').innerHTML = arr[i].Project_name;
   works[i].querySelector('#h3').innerHTML = arr[i].Featured[0];
   works[i].querySelector('.langue').innerHTML = arr[i].Featured[1];
@@ -152,17 +134,15 @@ for (let i = 0; i < arr.length; i++) {
   works[i].querySelector('.html').innerHTML = arr[i].technologies[0];
   works[i].querySelector('.css').innerHTML = arr[i].technologies[1];
   works[i].querySelector('.javascript').innerHTML = arr[i].technologies[2];
-
-  //desktop
-  works_desk[i].querySelector('.project_name').innerHTML = arr[i].Project_name;
-  works_desk[i].querySelector('#h3').innerHTML = arr[i].Featured[0];
-  works_desk[i].querySelector('.langue').innerHTML = arr[i].Featured[1];
-  works_desk[i].querySelector('.year').innerHTML = arr[i].Featured[2];
-  works_desk[i].querySelector('.project_description').innerHTML =
+  worksdesk[i].querySelector('.project_name').innerHTML = arr[i].Project_name;
+  worksdesk[i].querySelector('#h3').innerHTML = arr[i].Featured[0];
+  worksdesk[i].querySelector('.langue').innerHTML = arr[i].Featured[1];
+  worksdesk[i].querySelector('.year').innerHTML = arr[i].Featured[2];
+  worksdesk[i].querySelector('.project_description').innerHTML =
     arr[i].Project_descr[0];
-  works_desk[i].querySelector('.html').innerHTML = arr[i].technologies[0];
-  works_desk[i].querySelector('.css').innerHTML = arr[i].technologies[1];
-  works_desk[i].querySelector('.javascript').innerHTML = arr[i].technologies[2];
+  worksdesk[i].querySelector('.html').innerHTML = arr[i].technologies[0];
+  worksdesk[i].querySelector('.css').innerHTML = arr[i].technologies[1];
+  worksdesk[i].querySelector('.javascript').innerHTML = arr[i].technologies[2];
 }
 
 const popup_show = document.querySelectorAll('.link_to_project');
