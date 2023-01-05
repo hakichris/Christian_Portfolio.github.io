@@ -40,12 +40,14 @@ const arr = [
     Project_name: 'TONIC',
     Featured_image: 'images/Snapshoot_Portfolio .png',
     Feature_image_desk: 'images/Snapshoot_Portfolio_(4).png',
-    Featured: ['CANOPY', 'Back End Dev', '2015'],
-    Project_descr: [
+    Featured0: 'CANOPY', 
+    Featured1:'Back End Dev',
+    Featured2: '2015',
+    Project_descr: 
       ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      'Exploring the future of media in Facebook s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-    ],
-    technologies: ['html', 'javascript', 'css'],
+    technologies0: 'html', 
+    technologies1:'javascript', 
+    technologies2:'css',
     Project_descr_pop:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     link_to_live_version:
@@ -58,12 +60,17 @@ const arr = [
     Project_name: 'Multi-Post Stories',
     Featured_image: 'images/Snapshoot_Portfolio_(1).png',
     Feature_image_desk: 'images/Snapshoot_Portfolio_(5).png',
-    Featured: ['CANOPY', 'Back End Dev', '2015', 'FACEBOOK', 'Full Stack Dev'],
-    Project_descr: [
+    Featured0: 'CANOPY', 
+    Featured1: 'Back End Dev', 
+    Featured2: '2015', 
+    Featured3: 'FACEBOOK', 
+    Featured4: 'Full Stack Dev',
+    Project_descr: 
       ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      'Exploring the future of media in Facebook s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-    ],
-    technologies: ['html', 'javascript', 'css', 'Ruby on rails'],
+    technologies0: 'html',
+    technologies1: 'javascript', 
+    technologies2:'css', 
+    technologies3:'Ruby on rails',
     Project_descr_pop:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     link_to_live_version:
@@ -76,12 +83,17 @@ const arr = [
     Project_name: 'Facebook 360',
     Featured_image: 'images/Snapshoot_Portfolio_(2).png',
     Feature_image_desk: 'images/Snapshoot_Portfolio_(6).png',
-    Featured: ['CANOPY', 'Back End Dev', '2015', 'FACEBOOK', 'Full Stack Dev'],
-    Project_descr: [
+    Featured0: 'CANOPY', 
+    Featured1: 'Back End Dev', 
+    Featured2: '2015', 
+    Featured3: 'FACEBOOK', 
+    Featured4: 'Full Stack Dev',
+    Project_descr: 
       ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      'Exploring the future of media in Facebook s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-    ],
-    technologies: ['html', 'javascript', 'css', 'Ruby on rails'],
+    technologies0: 'html',
+    technologies1: 'javascript', 
+    technologies2:'css', 
+    technologies3:'Ruby on rails',
     Project_descr_pop:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     link_to_live_version:
@@ -94,17 +106,17 @@ const arr = [
     Project_name: 'Uber Navigation',
     Featured_image: 'images/Snapshoot_Portfolio_(3).png',
     Feature_image_desk: 'images/Snapshoot_Portfolio_(4).png',
-    Featured: [
-      'CANOPY',
-      'Back End Dev',
-      '2015',
-      'Uber',
-      'Lead Developer',
-      '2018',
-    ],
+    Featured0: 'CANOPY', 
+    Featured1: 'Back End Dev', 
+    Featured2: '2015', 
+    Featured3: 'FACEBOOK', 
+    Featured4: 'Full Stack Dev',
     Project_descr:
       ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    technologies: ['html', 'javascript', 'css', 'Ruby on rails'],
+    technologies0: 'html',
+    technologies1: 'javascript', 
+    technologies2:'css', 
+    technologies3:'Ruby on rails', 
     Project_descr_pop:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     link_to_live_version:
@@ -124,25 +136,24 @@ for (let i = 0; i < arr.length; i += 1) {
   works[i].appendChild(image);
   worksdesk[i].appendChild(images);
   works[i].querySelector('.project_name').innerHTML = arr[i].Project_name;
-  works[i].querySelector('#h3').innerHTML = arr[i].Featured[0];
-  works[i].querySelector('.langue').innerHTML = arr[i].Featured[1];
-  works[i].querySelector('.year').innerHTML = arr[i].Featured[2];
-  works[i].querySelector('.project_description').innerHTML = arr[i].Project_descr[0];
-  works[i].querySelector('.html').innerHTML = arr[i].technologies[0];
-  works[i].querySelector('.css').innerHTML = arr[i].technologies[1];
-  works[i].querySelector('.javascript').innerHTML = arr[i].technologies[2];
+  works[i].querySelector('#h3').innerHTML = arr[i].Featured0;
+  works[i].querySelector('.langue').innerHTML = arr[i].Featured1;
+  works[i].querySelector('.year').innerHTML = arr[i].Featured2;
+  works[i].querySelector('.project_description').innerHTML = arr[i].Project_descr;
+  works[i].querySelector('.html').innerHTML = arr[i].technologies0;
+  works[i].querySelector('.css').innerHTML = arr[i].technologies1;
+  works[i].querySelector('.javascript').innerHTML = arr[i].technologies2;
   worksdesk[i].querySelector('.project_name').innerHTML = arr[i].Project_name;
-  worksdesk[i].querySelector('#h3').innerHTML = arr[i].Featured[0];
-  worksdesk[i].querySelector('.langue').innerHTML = arr[i].Featured[1];
-  worksdesk[i].querySelector('.year').innerHTML = arr[i].Featured[2];
-  worksdesk[i].querySelector('.project_description').innerHTML = arr[i].Project_descr[0];
-  worksdesk[i].querySelector('.html').innerHTML = arr[i].technologies[0];
-  worksdesk[i].querySelector('.css').innerHTML = arr[i].technologies[1];
-  worksdesk[i].querySelector('.javascript').innerHTML = arr[i].technologies[2];
+  worksdesk[i].querySelector('#h3').innerHTML = arr[i].Featured0;
+  worksdesk[i].querySelector('.langue').innerHTML = arr[i].Featured1;
+  worksdesk[i].querySelector('.year').innerHTML = arr[i].Featured2;
+  worksdesk[i].querySelector('.project_description').innerHTML = arr[i].Project_descr;
+  worksdesk[i].querySelector('.html').innerHTML = arr[i].technologies0;
+  worksdesk[i].querySelector('.css').innerHTML = arr[i].technologies1;
+  worksdesk[i].querySelector('.javascript').innerHTML = arr[i].technologies2;
 }
 
 const popupshow = document.querySelectorAll('.link_to_project');
-
 const image = document.createElement('img');
 image.setAttribute('src', 'images/Enabled.png');
 image.setAttribute('class', 'close');
@@ -160,15 +171,15 @@ function openPop() {
                                 <h3 class="project_name name">${arr[i].Project_name}</h3>
                                 <div class="overlayImage"></div>
                                  <ul class="client">
-                                         <li id="h3">${arr[i].Featured[0]} </li>
+                                         <li id="h3">${arr[i].Featured0} </li>
                                          <li class="Counter">
                                          <img src="images/Counter.png" alt="" />
                                         </li>
-                                         <li class="langue"> ${arr[i].Featured[1]}</li>
+                                         <li class="langue"> ${arr[i].Featured1}</li>
                                          <li class="Counter">
                                           <img src="images/Counter.png" alt=""/>
                                         </li>
-                                        <li class="year"> ${arr[i].Featured[2]}</li>
+                                        <li class="year"> ${arr[i].Featured2}</li>
                                   </ul>
                                  <div><img src=${arr[i].Featured_image} alt="Image_descr" class="model_image"></div>
                                  <div class="works_details model_flex">
@@ -176,9 +187,9 @@ function openPop() {
                                     ${arr[i].Project_descr_pop}
                                      </p>
                                     <ul class="code_language">
-                                        <li ><a class="ht html" href="#"> ${arr[i].technologies[0]}</a></li>
-                                        <li ><a class="ht css" href="#"> ${arr[i].technologies[1]}</a></li>
-                                            <li ><a class="ht javascript" href="#"> ${arr[i].technologies[2]}</a></li>
+                                        <li ><a class="ht html" href="#"> ${arr[i].technologies0}</a></li>
+                                        <li ><a class="ht css" href="#"> ${arr[i].technologies1}</a></li>
+                                            <li ><a class="ht javascript" href="#"> ${arr[i].technologies2}</a></li>
                                       </ul>
 
                                   <div class="btn">
@@ -195,7 +206,6 @@ function openPop() {
                                 </div>
                                 <img id="shape" src="images/Shape.png" alt="">
                       `;
-
         model.appendChild(overlay);
         model.style.display = 'block';
         const modalImage = document.querySelector('.overlayImage');
@@ -203,6 +213,12 @@ function openPop() {
       } 
     }
   });
+
+  function closePop() {
+    const popupclose = document.querySelector('.model');
+    popupclose.style.display = 'none';
+  }
+
   const closepopup = document.querySelector('.close');
   closepopup.addEventListener('click', () => {
     closePop();
@@ -215,7 +231,4 @@ for (const box of popupshow) {
   });
 }
 
-function closePop() {
-  const popupclose = document.querySelector('.model');
-  popupclose.style.display = 'none';
-}
+
