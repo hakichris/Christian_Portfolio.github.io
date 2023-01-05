@@ -102,10 +102,8 @@ const arr = [
       'Lead Developer',
       '2018',
     ],
-    Project_descr: [
+    Project_descr:
       ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      ' A daily selection of privately personalized reads; no accounts orsign-ups required.',
-    ],
     technologies: ['html', 'javascript', 'css', 'Ruby on rails'],
     Project_descr_pop:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
@@ -118,7 +116,7 @@ const arr = [
 const works = document.querySelectorAll('.work');
 const worksdesk = document.querySelectorAll('.works');
 
-for (let i = 0; i < arr.length; i++) {
+for (let i = 0; i < arr.length; i+=1) {
   const image = document.createElement('img');
   const images = document.createElement('img');
   image.setAttribute('src', arr[i].Featured_image);
@@ -145,24 +143,18 @@ for (let i = 0; i < arr.length; i++) {
   worksdesk[i].querySelector('.javascript').innerHTML = arr[i].technologies[2];
 }
 
-const popup_show = document.querySelectorAll('.link_to_project');
+const popupshow = document.querySelectorAll('.link_to_project');
 
 const image = document.createElement('img');
 image.setAttribute('src', 'images/Enabled.png');
 image.setAttribute('class', 'close');
-
-for (const box of popup_show) {
-  box.addEventListener('click', function onClick() {
-    openPop();
-  });
-}
 
 function openPop() {
   const model = document.querySelector('.model');
   const overlay = document.createElement('div');
   overlay.classList.add('overlay');
 
-  popup_show.forEach((pop) => {
+  popupshow.forEach((pop) => {
     const projectId = pop.id;
     for (let i = 0; i < arr.length; i++) {
       if (projectId == arr[i].id) {
@@ -215,14 +207,20 @@ function openPop() {
       }
     }
   });
-  const close_popup = document.querySelector('.close');
-  close_popup.addEventListener('click', function () {
+  const closepopup = document.querySelector('.close');
+  closepopup.addEventListener('click', function () {
     console.log(image);
     closePop();
   });
 }
 
+for (const box of popupshow) {
+  box.addEventListener('click', function onClick() {
+    openPop();
+  });
+}
+
 function closePop() {
-  const popup_close = document.querySelector('.model');
-  popup_close.style.display = 'none';
+  const popupclose = document.querySelector('.model');
+  popupclose.style.display = 'none';
 }
