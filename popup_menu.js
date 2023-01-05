@@ -225,7 +225,7 @@ function openPop() {
   });
 }
 
-popupshow.forEach( (key) => {
+popupshow.forEach((key) => {
   key.addEventListener('click', () => {
     openPop();
   });
