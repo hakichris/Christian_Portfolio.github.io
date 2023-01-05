@@ -158,9 +158,8 @@ function openPop() {
       if(projectId == arr[i].id){
         console.log(arr[i].Project_name)
         overlay.innerHTML = `<div class="Project info">
-                              
                                 <h3 class="project_name name">${arr[i].Project_name}</h3>
-                                <img class="close" src="images/Enabled.png" alt="">
+                                <img  src="images/Enabled.png" alt="..." class="close">
                                  <ul class="client">
                                          <li id="h3">${arr[i].Featured[0]} </li>
                                          <li class="Counter">
@@ -214,7 +213,7 @@ function closePop() {
   popup_close.style.display = 'none';
 }
 
-close_popup.addEventListener('click', () => {
+close_popup.addEventListener('click', function onClick() {
   closePop();
 });
 
