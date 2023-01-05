@@ -139,6 +139,10 @@ for(let i = 0; i<arr.length; i++){
 
 const popup_show = document.querySelectorAll('.link_to_project')
 
+const image = document.createElement('img')
+image.setAttribute('src', "images/Enabled.png")
+image.setAttribute('class', 'close')
+
 for (const box of popup_show) {
   box.addEventListener('click', function onClick() {
       openPop()
@@ -160,7 +164,7 @@ function openPop() {
         console.log(projectId, arr[i].id)
         overlay.innerHTML = `<div class="Project info">
                                 <h3 class="project_name name">${arr[i].Project_name}</h3>
-                                <img  src="images/Enabled.png" alt="..." class="close">
+                                <div class="overlayImage"></div>
                                  <ul class="client">
                                          <li id="h3">${arr[i].Featured[0]} </li>
                                          <li class="Counter">
@@ -172,52 +176,56 @@ function openPop() {
                                         </li>
                                         <li class="year"> ${arr[i].Featured[2]}</li>
                                   </ul>
-                                 <img src=${arr[i].Featured_image} alt="Image_descr" class="model_image">
-                          <div class="works_details model_flex">
+                                 <div><img src=${arr[i].Featured_image} alt="Image_descr" class="model_image"></div>
+                                 <div class="works_details model_flex">
                                      <p class="project_description">
                                     ${arr[i].Project_descr_pop}
                                      </p>
-                                <ul class="code_language">
-                                    <li ><a class="ht html" href="#"> ${arr[i]. technologies[0]}</a></li>
-                                     <li ><a class="ht css" href="#"> ${arr[i]. technologies[1]}</a></li>
-                                         <li ><a class="ht javascript" href="#"> ${arr[i]. technologies[2]}</a></li>
-                                   </ul>
+                                    <ul class="code_language">
+                                        <li ><a class="ht html" href="#"> ${arr[i]. technologies[0]}</a></li>
+                                        <li ><a class="ht css" href="#"> ${arr[i]. technologies[1]}</a></li>
+                                            <li ><a class="ht javascript" href="#"> ${arr[i]. technologies[2]}</a></li>
+                                      </ul>
 
-                              <div class="btn">
-                                 <button class="link_to_project">
-                                <a class="check_Project" href=${arr[i].link_to_live_version}> See live</a>
-                                  <img src="images/Icon - Export.svg" alt="">
-                                   </button>
-                                 <button class="link_to_project">
-                                      <a class="check_Project" href=${arr[i].link_to_live_version}>See Souce</a>
-                                  <img src="images/Vector 2.png" alt="">
-                                 </button>
-                              </div>
-                               </div>
-                           </div>
-                        <img id="shape" src="images/Shape.png" alt="">
+                                  <div class="btn">
+                                    <button class="link_to_project">
+                                    <a class="check_Project" href=${arr[i].link_to_live_version}> See live</a>
+                                      <img src="images/Icon - Export.svg" alt="">
+                                      </button>
+                                    <button class="link_to_project">
+                                          <a class="check_Project" href=${arr[i].link_to_live_version}>See Souce</a>
+                                      <img src="images/Vector 2.png" alt="">
+                                    </button>
+                                  </div>
+                                  </div>
+                                </div>
+                                <img id="shape" src="images/Shape.png" alt="">
                       `
-     
+      
       model.appendChild(overlay)
-      const popup_open = document.querySelector('.model');
       model.style.display = 'block';
+      const modalImage = document.querySelector('.overlayImage')
+      modalImage.appendChild(image)
+      console.log(image, modalImage)
       }
     }
   })
+    const close_popup = document.querySelector('.close')
+    close_popup.addEventListener("click", function(){
+      console.log(image)
+      closePop()
+    })
   
 }
 
-const close_popup = document.querySelector('.close')
-console.log('got here on close_pop')
+
+
+
 
 function closePop() {
   const popup_close = document.querySelector('.model');
   popup_close.style.display = 'none';
 }
-
-close_popup.addEventListener('click', function onClick() {
-  closePop();
-});
 
 
 

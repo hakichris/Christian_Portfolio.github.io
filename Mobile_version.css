@@ -675,6 +675,10 @@ a {
   list-style-type: none;
 }
 
+div.overlayImage{
+  z-index: 2;
+}
+
 .right_icon {
   position: relative;
   left: 140px;
@@ -871,6 +875,10 @@ div.model_image_desk {
   position: relative;
   height: 300%;
   width: 300%;
+}
+
+.model_image{
+  width: 100%;
 }
 
 .close{
