@@ -845,6 +845,12 @@ border-radius: 16px;
   display: none;
 }
 
+#error-message {
+  position: absolute;
+  bottom: 123px;
+  margin-left: 20px;
+}
+
 @media (min-width: 768px) {
 
 div.model{
@@ -895,5 +901,12 @@ div.model_flex {
 div.modal_flex div:first-child {
   width: 60%;
 }
+
+#error-message {
+  position: absolute;
+  bottom: -76px;
+  margin-left: 80px;
+}
+
 
 }
