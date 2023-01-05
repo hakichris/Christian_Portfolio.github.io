@@ -149,10 +149,11 @@ function openPop() {
   overlay.classList.add('overlay')
 
 
-  for(let i = 0; i < arr.length; i++){
-    const projectId = popup_show[i].id
+  popup_show.forEach(pop => {
+    const projectId = pop.id
+    for(let i =0 ; i < arr.length; i++){
       if(projectId == arr[i].id){
-        console.log(arr[i].Project_name)
+        console.log(projectId, arr[i].id)
         overlay.innerHTML = `<div class="Project info">
                           <h3 class="project_name">${arr[i].Project_name}</h3>
                           <img class="close" src="images/Enabled.png" alt="...">
@@ -194,7 +195,8 @@ function openPop() {
       const popup_open = document.querySelector('.model');
       popup_open.style.display = 'block';
       }
-  }
+    }
+  })
   
       
 
