@@ -116,7 +116,7 @@ const arr = [
 const works = document.querySelectorAll('.work');
 const worksdesk = document.querySelectorAll('.works');
 
-for (let i = 0; i < arr.length; i+=1) {
+for (let i = 0; i < arr.length; i += 1) {
   const image = document.createElement('img');
   const images = document.createElement('img');
   image.setAttribute('src', arr[i].Featured_image);
@@ -127,8 +127,7 @@ for (let i = 0; i < arr.length; i+=1) {
   works[i].querySelector('#h3').innerHTML = arr[i].Featured[0];
   works[i].querySelector('.langue').innerHTML = arr[i].Featured[1];
   works[i].querySelector('.year').innerHTML = arr[i].Featured[2];
-  works[i].querySelector('.project_description').innerHTML =
-    arr[i].Project_descr[0];
+  works[i].querySelector('.project_description').innerHTML = arr[i].Project_descr[0];
   works[i].querySelector('.html').innerHTML = arr[i].technologies[0];
   works[i].querySelector('.css').innerHTML = arr[i].technologies[1];
   works[i].querySelector('.javascript').innerHTML = arr[i].technologies[2];
@@ -136,8 +135,7 @@ for (let i = 0; i < arr.length; i+=1) {
   worksdesk[i].querySelector('#h3').innerHTML = arr[i].Featured[0];
   worksdesk[i].querySelector('.langue').innerHTML = arr[i].Featured[1];
   worksdesk[i].querySelector('.year').innerHTML = arr[i].Featured[2];
-  worksdesk[i].querySelector('.project_description').innerHTML =
-    arr[i].Project_descr[0];
+  worksdesk[i].querySelector('.project_description').innerHTML = arr[i].Project_descr[0];
   worksdesk[i].querySelector('.html').innerHTML = arr[i].technologies[0];
   worksdesk[i].querySelector('.css').innerHTML = arr[i].technologies[1];
   worksdesk[i].querySelector('.javascript').innerHTML = arr[i].technologies[2];
@@ -156,9 +154,8 @@ function openPop() {
 
   popupshow.forEach((pop) => {
     const projectId = pop.id;
-    for (let i = 0; i < arr.length; i++) {
-      if (projectId == arr[i].id) {
-        console.log(projectId, arr[i].id);
+    for (let i = 0; i < arr.length; i += 1) {
+      if (projectId === arr[i].id) {
         overlay.innerHTML = `<div class="Project info">
                                 <h3 class="project_name name">${arr[i].Project_name}</h3>
                                 <div class="overlayImage"></div>
@@ -203,19 +200,17 @@ function openPop() {
         model.style.display = 'block';
         const modalImage = document.querySelector('.overlayImage');
         modalImage.appendChild(image);
-        console.log(image, modalImage);
-      }
+      } 
     }
   });
   const closepopup = document.querySelector('.close');
-  closepopup.addEventListener('click', function () {
-    console.log(image);
+  closepopup.addEventListener('click', () => {
     closePop();
   });
 }
 
 for (const box of popupshow) {
-  box.addEventListener('click', function onClick() {
+  box.addEventListener('click', () => {
     openPop();
   });
 }
