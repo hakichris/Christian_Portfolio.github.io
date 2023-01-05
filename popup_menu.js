@@ -195,9 +195,9 @@ function openPop() {
           <img id="shape" src="images/Shape.png" alt="">
                   `;
          function closePop() {
-            const popupclose = document.querySelector('.model');
-            popupclose.style.display = 'none';
-                  }
+              const popupclose = document.querySelector('.model');
+              popupclose.style.display = 'none';
+              }
           model.appendChild(overlay);
           model.style.display = 'block';
           const modalImage = document.querySelector('.overlayImage');
@@ -210,8 +210,8 @@ function openPop() {
       }
     });
   });
-
 }
+
 popupshow.forEach((key) => {
   key.addEventListener('click', () => {
     openPop();
