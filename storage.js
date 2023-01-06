@@ -1,6 +1,5 @@
 const form1 = document.querySelector('#contact');
-form1.addEventListener('submit', (e) => {
-//   e.preventDefault();
+form1.addEventListener('submit', (e) => {  
   const obj = {
     fullName: document.querySelector('#name').value,
     emailAdress: document.querySelector('#email').value,
