@@ -985,7 +985,7 @@ h4 {
     gap: 12px;
     position: absolute;
     width: 90%;
-    height: 90%;
+    height: 600px;
     left: 10px;
     top: 10px;
     background: #fff;
@@ -1020,6 +1020,7 @@ h4 {
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+    height: 50%;
   }
 
   .model_image {
@@ -1046,6 +1047,7 @@ h4 {
   .technology {
     display: flex;
     flex-direction: row;
+    height: 50%;
   }
 
   .btn {
