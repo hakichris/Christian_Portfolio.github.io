@@ -143,15 +143,18 @@ const popupshow = document.querySelectorAll('.link_to_project');
 const image = document.createElement('img');
 image.setAttribute('src', 'images/Enabled.png');
 image.setAttribute('class', 'close');
+function closePop() {
+  const popupclose = document.querySelector('.model');
+  popupclose.style.display = 'none';
+}
 function openPop() {
   const model = document.querySelector('.model');
   const overlay = document.createElement('div');
   overlay.classList.add('overlay');
   popupshow.forEach((pop) => {
-    pop.addEventListener('click', function handleClick(e){
-      for (let i = 0; i <= arr.length; i++) {
+    pop.addEventListener('click', () => {
+      for (let i = 0; i <= arr.length; i += 1) {
         if (pop.id === arr[i]?.id) {
-          console.log(arr[i].Project_name)
           overlay.innerHTML = `<div class="Project">
           <div class="overlayImage">
           <h3 class="name">${arr[i].Project_name}</h3>
@@ -192,9 +195,9 @@ function openPop() {
                       </div>
                  </div>
                </div>
-             </div>
-          <img id="shape" src="images/Shape.png" alt="">
-                  `;
+        </div>
+        <img id="shape" src="images/Shape.png" alt="">
+        `;
           model.appendChild(overlay);
           model.style.display = 'block';
           const modalImage = document.querySelector('.overlayImage');
@@ -205,16 +208,12 @@ function openPop() {
           });
         }
       }
-    })
+    });
   });
-  function closePop() {
-    const popupclose = document.querySelector('.model');
-    popupclose.style.display = 'none';
-  }
 }
+
 popupshow.forEach((key) => {
   key.addEventListener('click', () => {
     openPop();
   });
 });
-
