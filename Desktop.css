@@ -6,7 +6,8 @@
 #shape,
 .work_container,
 .Img,
-.popup {
+.popup,
+.model {
   display: none;
 }
 
@@ -182,7 +183,7 @@ main {
   top: 850px;
 }
 
-.work {
+.works {
   display: flex;
   flex-direction: row;
   height: 496px;
@@ -225,12 +226,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 24px;
+  padding-left: 64px;
   gap: 24px;
   position: relative;
   width: 544px;
   height: 445px;
-  left: -520px;
+  left: 0;
   top: 50px;
 }
 
@@ -240,10 +241,8 @@ main {
   align-items: flex-start;
   padding: 0;
   gap: 12px;
-  width: 295px;
+  width: 100%;
   height: 288px;
-  flex: none;
-  order: 1;
   flex-grow: 0;
 }
 
@@ -424,6 +423,8 @@ a {
   align-items: center;
   padding: 12px;
   gap: 10px;
+  color: #606eeb;
+  background-color: #fff;
   width: 124px;
   height: 48px;
   left: 0;
@@ -773,7 +774,7 @@ h5 {
   color: #ebebff;
 }
 
-#mail,
+#email,
 #msg,
 #name {
   margin-top: 20px;
