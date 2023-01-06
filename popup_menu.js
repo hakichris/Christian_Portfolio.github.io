@@ -212,11 +212,8 @@ function openPop() {
   });
 }
 
-const Blur = document.querySelector('#blur')
 popupshow.forEach((key) => {
   key.addEventListener('click', () => {
     openPop();
-    Blur.style.backdropfilter = 'blur(8px)';
-    // Blur.style.mix-blend-mode: "multiply";
   });
 });
