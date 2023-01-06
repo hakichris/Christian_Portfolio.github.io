@@ -813,9 +813,9 @@ h4 {
   border-radius: 0;
   right: 0;
   bottom: 0;
-  background: #c1c7d0;
   backdrop-filter: blur(10px);
   mix-blend-mode: multiply;
+  background: #C1C7D0;
   display: none;
 }
 
@@ -966,31 +966,35 @@ h4 {
     position: fixed;
     display: flex;
     flex-direction: center;
-    height: 100%;
     width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
     border-radius: 0;
     right: 0;
     bottom: 0;
-    background: #c1c7d0;
-    backdrop-filter: blur(10px);
-    mix-blend-mode: multiply;
+    background: #C1C7D0;
   }
 
   .overlay {
+    position: fixed;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 16px;
     gap: 12px;
     position: absolute;
     width: 90%;
-    height: 600px;
-    left: 10px;
-    top: 10px;
+    height: 90%;
+    left: 5%;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
+    stop-opacity: 10px;
   }
 
   .overlayImage {
@@ -999,6 +1003,7 @@ h4 {
     align-items: stretch;
     height: fit-content;
     width: 100%;
+    height: 20%;
   }
 
   .close {
@@ -1055,8 +1060,13 @@ h4 {
   }
 
   #error-message {
-    position: absolute;
+    position: relative;
     bottom: -75px;
     left: 80px;
+  }
+
+  .techno {
+    position: absolute;
+    top: 10%;
   }
 }
