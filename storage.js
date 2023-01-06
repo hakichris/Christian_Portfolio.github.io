@@ -1,5 +1,5 @@
 const form = document.querySelector('#contact');
-form.addEventListener('submit', (e) => {  
+form.addEventListener('submit',() => {  
   const obj = {
     fullName: document.querySelector('#name').value,
     emailAdress: document.querySelector('#email').value,
