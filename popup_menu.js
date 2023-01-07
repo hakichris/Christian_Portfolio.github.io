@@ -119,7 +119,7 @@ const projectContainer = document.querySelector('.work_container_Desketop');
 for (let i = 0; i < arr.length; i += 1) {
   const projectCards = `
                         <div class="works works${i}">
-                          <div class="Project, ${i + 1}">
+                          <div class="Project${i + 1}">
                             <h3 class="project_name">${arr[i].Project_name}</h3>
                             <ul class="client">
                               <li id="h3">${arr[i].Featured0}</li>
