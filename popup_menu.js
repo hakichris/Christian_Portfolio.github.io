@@ -138,7 +138,7 @@ for (let i = 0; i < arr.length; i += 1) {
                               <li class="ht2"><a class="css" href="#">${arr[i].technologies1}</a></li>
                               <li class="ht3"><a class="javascript" href="#">${arr[i].technologies2}</a></li>
                             </ul>
-                            <button class="link_to_project" id="${i += 1}"> See Project </button>
+                            <button class="link_to_project" id="${i + 1}"> See Project </button>
                           </div>
                           <img src="${arr[i].Feature_image_desk}" alt=""/>
                         </div>`;
