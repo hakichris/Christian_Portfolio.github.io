@@ -177,6 +177,7 @@ for (let i = 0; i < arr.length; i += 1) {
   projectContainer.innerHTML += projectCards
   work.innerHTML += workCards
 }
+
 const popupshow = document.querySelectorAll('.link_to_project');
 const image = document.createElement('img');
 image.setAttribute('src', 'images/Enabled.png');
@@ -214,7 +215,7 @@ function openPop() {
            <div><img src=${arr[i].Featured_image} alt="Image_descr" class="model_image"></div>
            <div class="worksdetails">
                <p class="Description">
-              ${arr[i].Project_descr_pop}
+                  ${arr[i].Project_descr_pop}
                </p>
 
                <div class="details">
