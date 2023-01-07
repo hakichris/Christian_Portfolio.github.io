@@ -187,8 +187,12 @@ image.setAttribute('src', 'images/Enabled.png');
 image.setAttribute('class', 'close');
 function closePop() {
   const popupclose = document.querySelector('.model');
+  const overlay = document.querySelector('.overlay')
+  overlay.remove()
   popupclose.style.display = 'none';
 }
+
+const body = document.querySelector('body')
 function openPop() {
   const model = document.querySelector('.model');
   const overlay = document.createElement('div');
@@ -240,7 +244,7 @@ function openPop() {
         </div>
         <img id="shape" src="images/Shape.png" alt="">
         `;
-          model.appendChild(overlay);
+          body.appendChild(overlay);
           model.style.display = 'block';
           const modalImage = document.querySelector('.overlayImage');
           modalImage.appendChild(image);
