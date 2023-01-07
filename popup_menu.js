@@ -119,7 +119,7 @@ const projectContainer = document.querySelector('.work_container_Desketop');
 for (let i = 0; i < arr.length; i += 1) {
   const projectCards = `
                         <div class="works works${i}">
-                          <div class="${'Project' + (i + 1)}">
+                          <div class="${'Project' + (i += 1)}">
                             <h3 class="project_name">${arr[i].Project_name}</h3>
                             <ul class="client">
                               <li id="h3">${arr[i].Featured0}</li>
@@ -132,23 +132,13 @@ for (let i = 0; i < arr.length; i += 1) {
                               </li>
                               <li class="year">${arr[i].Featured2}</li>
                             </ul>
-                            <p class="project_description">
-                                ${arr[i].Project_descr}
-                            </p>
+                            <p class="project_description"> ${arr[i].Project_descr}  </p>
                             <ul class="code_language">
-                              <li class="ht1"><a class="html" href="#">${
-                                arr[i].technologies0
-                              }</a></li>
-                              <li class="ht2"><a class="css" href="#">${
-                                arr[i].technologies1
-                              }</a></li>
-                              <li class="ht3"><a class="javascript" href="#">${
-                                arr[i].technologies2
-                              }</a></li>
+                              <li class="ht1"><a class="html" href="#">${ arr[i].technologies0 }</a></li>
+                              <li class="ht2"><a class="css" href="#">${arr[i].technologies1 }</a></li>
+                              <li class="ht3"><a class="javascript" href="#">${ arr[i].technologies2 }</a></li>
                             </ul>
-                            <button class="link_to_project" id="${
-                              i + 1
-                            }"> See Project </button>
+                            <button class="link_to_project" id="${ i += 1 }"> See Project </button>
                           </div>
                           <img src="${arr[i].Feature_image_desk}" alt=""/>
                         </div>`;
@@ -187,7 +177,6 @@ for (let i = 0; i < arr.length; i += 1) {
                         }> See Project </button>
                       </div>
                     </div>`;
-  console.log(projectContainer);
   projectContainer.innerHTML += projectCards;
   work.innerHTML += workCards;
 }
@@ -256,9 +245,10 @@ function openPop() {
           `;
           const body = document.querySelector('body');
           body.appendChild(overlay);
-          const checkOverlay = document.querySelectorAll('.overlay')
-          if(checkOverlay.length > 1){
-            document.querySelector('.overlay:last-child').style.display = "none"
+          const checkOverlay = document.querySelectorAll('.overlay');
+          if (checkOverlay.length > 1) {
+            document.querySelector('.overlay:last-child').style.display =
+              'none';
           }
           model.style.display = 'block';
           const modalImage = document.querySelector('.overlayImage');
