@@ -255,6 +255,10 @@ function openPop() {
           `;
           const body = document.querySelector('body');
           body.appendChild(overlay);
+          const checkOverlay = document.querySelectorAll('.overlay')
+          if(checkOverlay.length > 1){
+            document.querySelector('.overlay:last-child').style.display = "none"
+          }
           model.style.display = 'block';
           const modalImage = document.querySelector('.overlayImage');
           modalImage.appendChild(image);
