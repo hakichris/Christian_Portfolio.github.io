@@ -189,7 +189,7 @@ function openPop() {
   overlay.classList.add('overlay');
   popupshow.forEach((pop) => {
     pop.addEventListener('click', () => {
-      for (let i = 0; i <= arr.length; i + 1) {
+      for (let i = 0; i <= arr.length; i += 1) {
         if (pop.id === arr[i]?.id) {
           overlay.innerHTML = `<div class="Project">
           <div class="overlayImage">
