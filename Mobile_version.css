@@ -807,7 +807,7 @@ h4 {
 .model {
   position: fixed;
   height: 823px;
-  width: 375px;
+  width: 382px;
   left: 0;
   top: 0;
   border-radius: 0;
@@ -815,9 +815,14 @@ h4 {
   bottom: 0;
   background: #C1C7D0;
   display: none;
+  background: black;
+  mix-blend-mode: multiply;
+  opacity: 0.5;
+  transition: opacity 200ms;
 }
 
 .overlay {
+  position: fixed;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -827,7 +832,7 @@ h4 {
   position: absolute;
   width: 343px;
   height: 700px;
-  left: calc(50% - 343px / 2);
+  left: 10px;
   top: 10px;
   background: #fff;
   border: 1px solid #dfe1e6;
