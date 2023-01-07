@@ -113,15 +113,13 @@ const arr = [
     Source: 'https://github.com/hakichris/Christian_Portfolio.github.io.git',
   },
 ];
-const works = document.querySelectorAll('.work');
-const worksdesk = document.querySelectorAll('.works');
-const work = document.querySelector('.work_container')
 
-const projectContainer = document.querySelector('.work_container_Desketop')
+const work = document.querySelector('.work_container');
+const projectContainer = document.querySelector('.work_container_Desketop');
 for (let i = 0; i < arr.length; i += 1) {
   const projectCards = `
                         <div class="works works${i}">
-                          <div class="${"Project" + (i+1)}">
+                          <div class="Project${i + 1}">
                             <h3 class="project_name">${arr[i].Project_name}</h3>
                             <ul class="client">
                               <li id="h3">${arr[i].Featured0}</li>
@@ -134,19 +132,17 @@ for (let i = 0; i < arr.length; i += 1) {
                               </li>
                               <li class="year">${arr[i].Featured2}</li>
                             </ul>
-                            <p class="project_description">
-                                ${arr[i].Project_descr}
-                            </p>
+                            <p class="project_description"> ${arr[i].Project_descr}  </p>
                             <ul class="code_language">
                               <li class="ht1"><a class="html" href="#">${arr[i].technologies0}</a></li>
                               <li class="ht2"><a class="css" href="#">${arr[i].technologies1}</a></li>
                               <li class="ht3"><a class="javascript" href="#">${arr[i].technologies2}</a></li>
                             </ul>
-                            <button class="link_to_project" id="${i+1}"> See Project </button>
+                            <button class="link_to_project" id="${i + 1}"> See Project </button>
                           </div>
                           <img src="${arr[i].Feature_image_desk}" alt=""/>
-                        </div>`
-    const workCards = `
+                        </div>`;
+  const workCards = `
                       <div class="work works1">
                       <img src="${arr[i].Featured_image}" alt=""/>
                       <div class="Project info">
@@ -162,29 +158,28 @@ for (let i = 0; i < arr.length; i += 1) {
                           </li>
                           <li class="year">${arr[i].Featured2}</li>
                         </ul>
-                        <p class="project_description">
-                          ${arr[i].Project_descr}
+                        <p class="project_description">${arr[i].Project_descr}
                         </p>
                         <ul class="code_language">
                           <li ><a class="ht html" href="#">${arr[i].technologies0}</a></li>
                           <li ><a class="ht css" href="#">${arr[i].technologies1}</a></li>
                           <li ><a class="ht javascript" href="#">${arr[i].technologies2}</a></li>
                         </ul>
-                        <button class="link_to_project mob_link" id=${i+1}> See Project </button>
+                        <button class="link_to_project mob_link" id=${i + 1}> See Project </button>
                       </div>
-                    </div>`
-  console.log(projectContainer)
-  projectContainer.innerHTML += projectCards
-  work.innerHTML += workCards
+                    </div>`;
+  projectContainer.innerHTML += projectCards;
+  work.innerHTML += workCards;
 }
+
 const popupshow = document.querySelectorAll('.link_to_project');
 const image = document.createElement('img');
 image.setAttribute('src', 'images/Enabled.png');
 image.setAttribute('class', 'close');
 function closePop() {
   const popupclose = document.querySelector('.model');
-  const overlay = document.querySelector('.overlay')
-  overlay.remove()
+  const overlay = document.querySelector('.overlay');
+  overlay.remove();
   popupclose.style.display = 'none';
 }
 
@@ -214,7 +209,7 @@ function openPop() {
            <div><img src=${arr[i].Featured_image} alt="Image_descr" class="model_image"></div>
            <div class="worksdetails">
                <p class="Description">
-              ${arr[i].Project_descr_pop}
+                  ${arr[i].Project_descr_pop}
                </p>
 
                <div class="details">
@@ -239,8 +234,12 @@ function openPop() {
           </div>
           <img id="shape" src="images/Shape.png" alt="">
           `;
-          const body = document.querySelector('body')
+          const body = document.querySelector('body');
           body.appendChild(overlay);
+          const checkOverlay = document.querySelectorAll('.overlay');
+          if (checkOverlay.length > 1) {
+            document.querySelector('.overlay:last-child').style.display = 'none';
+          }
           model.style.display = 'block';
           const modalImage = document.querySelector('.overlayImage');
           modalImage.appendChild(image);

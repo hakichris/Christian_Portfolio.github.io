@@ -186,6 +186,7 @@ main {
 .works {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   height: 496px;
   width: 1156px;
   background: #fff;
@@ -209,7 +210,8 @@ main {
   border-radius: 8px;
 }
 
-.Project1 {
+.Project1,
+.Project4 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -222,7 +224,8 @@ main {
   top: 50px;
 }
 
-.Project2 {
+.Project2,
+.Project3 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
