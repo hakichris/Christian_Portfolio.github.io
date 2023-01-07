@@ -146,8 +146,6 @@ for (let i = 0; i < arr.length; i += 1) {
                           </div>
                           <img src="${arr[i].Feature_image_desk}" alt=""/>
                         </div>`
-
-
     const workCards = `
                       <div class="work works1">
                       <img src="${arr[i].Featured_image}" alt=""/>
@@ -175,8 +173,6 @@ for (let i = 0; i < arr.length; i += 1) {
                         <button class="link_to_project mob_link" id=${i+1}> See Project </button>
                       </div>
                     </div>`
-
-  
   console.log(projectContainer)
   projectContainer.innerHTML += projectCards
   work.innerHTML += workCards
@@ -235,12 +231,12 @@ function openPop() {
                           <img src="images/Icon - Export.svg" alt="">
                           </button>
                          <button class="Butt">
-                                <a class="Check" href=${arr[i].link_to_live_version}>See Souce</a>
+                                <a class="Check" href=${arr[i].link_to_live_version}>See Source</a>
                                  <img src="images/Vector 2.png" alt="">
                          </button>
                       </div>
                  </div>
-               </div>
+              </div>
         </div>
         <img id="shape" src="images/Shape.png" alt="">
         `;
