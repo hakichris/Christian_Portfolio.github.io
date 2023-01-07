@@ -209,7 +209,7 @@ main {
   border-radius: 8px;
 }
 
-.Project1 {
+.Project1, .Project3 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -222,7 +222,7 @@ main {
   top: 50px;
 }
 
-.Project2 {
+.Project2, .Project4 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;

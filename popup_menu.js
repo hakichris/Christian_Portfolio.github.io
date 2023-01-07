@@ -115,29 +115,71 @@ const arr = [
 ];
 const works = document.querySelectorAll('.work');
 const worksdesk = document.querySelectorAll('.works');
+const work = document.querySelector('.work_container')
+
+const projectContainer = document.querySelector('.work_container_Desketop')
 for (let i = 0; i < arr.length; i += 1) {
-  const image = document.createElement('img');
-  const images = document.createElement('img');
-  image.setAttribute('src', arr[i].Featured_image);
-  images.setAttribute('src', arr[i].Feature_image_desk);
-  works[i].appendChild(image);
-  worksdesk[i].appendChild(images);
-  works[i].querySelector('.project_name').innerHTML = arr[i].Project_name;
-  works[i].querySelector('#h3').innerHTML = arr[i].Featured0;
-  works[i].querySelector('.langue').innerHTML = arr[i].Featured1;
-  works[i].querySelector('.year').innerHTML = arr[i].Featured2;
-  works[i].querySelector('.project_description').innerHTML = arr[i].Project_descr;
-  works[i].querySelector('.html').innerHTML = arr[i].technologies0;
-  works[i].querySelector('.css').innerHTML = arr[i].technologies1;
-  works[i].querySelector('.javascript').innerHTML = arr[i].technologies2;
-  worksdesk[i].querySelector('.project_name').innerHTML = arr[i].Project_name;
-  worksdesk[i].querySelector('#h3').innerHTML = arr[i].Featured0;
-  worksdesk[i].querySelector('.langue').innerHTML = arr[i].Featured1;
-  worksdesk[i].querySelector('.year').innerHTML = arr[i].Featured2;
-  worksdesk[i].querySelector('.project_description').innerHTML = arr[i].Project_descr;
-  worksdesk[i].querySelector('.html').innerHTML = arr[i].technologies0;
-  worksdesk[i].querySelector('.css').innerHTML = arr[i].technologies1;
-  worksdesk[i].querySelector('.javascript').innerHTML = arr[i].technologies2;
+  const projectCards = `
+                        <div class="works works${i}">
+                          <div class="${"Project" + (i+1)}">
+                            <h3 class="project_name">${arr[i].Project_name}</h3>
+                            <ul class="client">
+                              <li id="h3">${arr[i].Featured0}</li>
+                              <li class="Counter">
+                                <img src="images/Counter.png" alt=""/>
+                              </li>
+                              <li class="langue">${arr[i].Featured1}</li>
+                              <li class="Counter">
+                                <img src="images/Counter.png" alt=""/>
+                              </li>
+                              <li class="year">${arr[i].Featured2}</li>
+                            </ul>
+                            <p class="project_description">
+                                ${arr[i].Project_descr}
+                            </p>
+                            <ul class="code_language">
+                              <li class="ht1"><a class="html" href="#">${arr[i].technologies0}</a></li>
+                              <li class="ht2"><a class="css" href="#">${arr[i].technologies1}</a></li>
+                              <li class="ht3"><a class="javascript" href="#">${arr[i].technologies2}</a></li>
+                            </ul>
+                            <button class="link_to_project" id="${i+1}"> See Project </button>
+                          </div>
+                          <img src="${arr[i].Feature_image_desk}" alt=""/>
+                        </div>`
+
+
+    const workCards = `
+                      <div class="work works1">
+                      <img src="${arr[i].Featured_image}" alt=""/>
+                      <div class="Project info">
+                        <h3 class="project_name">${arr[i].Project_name}</h3>
+                        <ul class="client">
+                          <li id="h3">${arr[i].Featured0}</li>
+                          <li class="Counter">
+                            <img src="images/Counter.png" alt=""/>
+                          </li>
+                          <li class="langue">${arr[i].Featured1}</li>
+                          <li class="Counter">
+                            <img src="images/Counter.png" alt="" />
+                          </li>
+                          <li class="year">${arr[i].Featured2}</li>
+                        </ul>
+                        <p class="project_description">
+                          ${arr[i].Project_descr}
+                        </p>
+                        <ul class="code_language">
+                          <li ><a class="ht html" href="#">${arr[i].technologies0}</a></li>
+                          <li ><a class="ht css" href="#">${arr[i].technologies1}</a></li>
+                          <li ><a class="ht javascript" href="#">${arr[i].technologies2}</a></li>
+                        </ul>
+                        <button class="link_to_project mob_link" id=${i+1}> See Project </button>
+                      </div>
+                    </div>`
+
+  
+  console.log(projectContainer)
+  projectContainer.innerHTML += projectCards
+  work.innerHTML += workCards
 }
 const popupshow = document.querySelectorAll('.link_to_project');
 const image = document.createElement('img');
