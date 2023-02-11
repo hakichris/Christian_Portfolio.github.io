@@ -26,6 +26,7 @@ option2.addEventListener('click', () => {
 option3.addEventListener('click', () => {
   closeDiv();
 });
+
 const arr = [
   {
     id: '1',
