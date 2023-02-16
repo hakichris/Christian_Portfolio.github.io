@@ -3,6 +3,7 @@ const hamburger = document.querySelector('#hamburger');
 const option1 = document.querySelector('.port');
 const option2 = document.querySelector('.Ab');
 const option3 = document.querySelector('.cont');
+
 function openDiv() {
   const popup = document.querySelector('#popup');
   popup.style.display = 'block';
@@ -133,13 +134,23 @@ for (let i = 0; i < arr.length; i += 1) {
                               </li>
                               <li class="year">${arr[i].Featured2}</li>
                             </ul>
-                            <p class="project_description"> ${arr[i].Project_descr}  </p>
+                            <p class="project_description"> ${
+                              arr[i].Project_descr
+                            }  </p>
                             <ul class="code_language">
-                              <li class="ht1"><a class="html" href="#">${arr[i].technologies0}</a></li>
-                              <li class="ht2"><a class="css" href="#">${arr[i].technologies1}</a></li>
-                              <li class="ht3"><a class="javascript" href="#">${arr[i].technologies2}</a></li>
+                              <li class="ht1"><a class="html" href="#">${
+                                arr[i].technologies0
+                              }</a></li>
+                              <li class="ht2"><a class="css" href="#">${
+                                arr[i].technologies1
+                              }</a></li>
+                              <li class="ht3"><a class="javascript" href="#">${
+                                arr[i].technologies2
+                              }</a></li>
                             </ul>
-                            <button class="link_to_project" id="${i + 1}"> See Project </button>
+                            <button class="link_to_project" id="${
+                              i + 1
+                            }"> See Project </button>
                           </div>
                           <img src="${arr[i].Feature_image_desk}" alt=""/>
                         </div>`;
@@ -162,11 +173,19 @@ for (let i = 0; i < arr.length; i += 1) {
                         <p class="project_description">${arr[i].Project_descr}
                         </p>
                         <ul class="code_language">
-                          <li ><a class="ht html" href="#">${arr[i].technologies0}</a></li>
-                          <li ><a class="ht css" href="#">${arr[i].technologies1}</a></li>
-                          <li ><a class="ht javascript" href="#">${arr[i].technologies2}</a></li>
+                          <li ><a class="ht html" href="#">${
+                            arr[i].technologies0
+                          }</a></li>
+                          <li ><a class="ht css" href="#">${
+                            arr[i].technologies1
+                          }</a></li>
+                          <li ><a class="ht javascript" href="#">${
+                            arr[i].technologies2
+                          }</a></li>
                         </ul>
-                        <button class="link_to_project mob_link" id=${i + 1}> See Project </button>
+                        <button class="link_to_project mob_link" id=${
+                          i + 1
+                        }> See Project </button>
                       </div>
                     </div>`;
   projectContainer.innerHTML += projectCards;
@@ -239,7 +258,8 @@ function openPop() {
           body.appendChild(overlay);
           const checkOverlay = document.querySelectorAll('.overlay');
           if (checkOverlay.length > 1) {
-            document.querySelector('.overlay:last-child').style.display = 'none';
+            document.querySelector('.overlay:last-child').style.display =
+              'none';
           }
           model.style.display = 'block';
           const modalImage = document.querySelector('.overlayImage');
