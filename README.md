@@ -84,7 +84,7 @@
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://hakichris.github.io/Christian_Portfolio.github.io/)
+- [Live Demo Link](https://effulgent-gecko-2ad84b.netlify.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
